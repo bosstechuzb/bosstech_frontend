@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import OurServices from "../../components/OurServices";
 import SeoSolution from "../../components/SeoSolution";
 import WhyChooseUs from "../../components/WhyChooseUs";
+import Portfolio from "../../components/Portfolio";
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
       <OurServices />
       <SeoSolution />
       <WhyChooseUs />
+      <Portfolio />
       home page Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
       ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia

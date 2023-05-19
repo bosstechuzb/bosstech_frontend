@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { globalContainer } from "./../../root/style";
+import { globalButton, globalContainer } from "./../../root/style";
 import { Link } from "react-router-dom";
 
 export const OuterContainer = styled.div`
@@ -108,16 +108,7 @@ export const Right = styled.div`
 `;
 
 export const Button = styled(Link)`
-  text-decoration: none;
-  padding: 10px 28px;
-  border-radius: 8px;
-  background-color: #1b5bf7;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: #fff;
+  ${globalButton}
 `;
 
 // --- Mobile

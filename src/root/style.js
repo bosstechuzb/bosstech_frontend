@@ -10,7 +10,27 @@ export const globalContainer = css`
   }
 `;
 
-export const globalButton = css``;
+export const globalButton = css`
+  border: none;
+  text-decoration: none;
+  padding: 10px 28px;
+  border-radius: 8px;
+  background-color: #1b5bf7;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  transition: 0.2s linear;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(-2px);
+  }
+`;
 
 export const GlobalStyles = createGlobalStyle`
     /* Universal selector */
