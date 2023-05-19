@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { globalContainer } from "./../../root/style";
 import { Link } from "react-router-dom";
 
@@ -26,18 +26,31 @@ export const ForLogo = styled(Link)`
   svg {
     width: 100%;
   }
+
+  @media screen and (max-width: 990px) {
+    width: 100px;
+  }
 `;
 
 export const RightSide = styled.div`
   display: flex;
   align-items: center;
   gap: 100px;
+
+  @media screen and (max-width: 990px) {
+    gap: 40px;
+  }
 `;
 
 export const Links = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
+
+  /* Mobile */
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const NavbarLink = styled(Link)`
@@ -59,12 +72,29 @@ export const NavbarLink = styled(Link)`
   &:hover {
     color: #1b5bf7;
   }
+
+  @media screen and (max-width: 990px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 17px;
+  }
 `;
 
 export const Right = styled.div`
   display: flex;
   align-items: center;
   gap: 35px;
+
+  @media screen and (max-width: 990px) {
+    gap: 30px;
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const Button = styled(Link)`
@@ -78,4 +108,58 @@ export const Button = styled(Link)`
   font-size: 14px;
   line-height: 20px;
   color: #fff;
+`;
+
+// --- Mobile
+
+export const Burger = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    max-height: 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const Menu = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 65px);
+  overflow-y: auto;
+  background-color: #e0e7f9;
+  padding-block: 20px;
+  transition: 0.1s linear;
+
+  ${({ opened }) =>
+    opened === "true"
+      ? css`
+          visibility: visible;
+          opacity: 1;
+        `
+      : css`
+          visibility: hidden;
+          opacity: 0;
+        `}
+`;
+
+export const MenuContainer = styled.div`
+  ${globalContainer};
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 `;

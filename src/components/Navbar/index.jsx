@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   ForLogo,
@@ -7,17 +7,30 @@ import {
   NavbarLink,
   RightSide,
   Right,
-  Button
+  Button,
+  Burger,
+  Menu,
+  MenuContainer,
 } from "./style";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import { toTop } from "./../../resources/toTop";
 import SelectLang from "../SelectLang";
+import burger from "../../assets/icons/hamburger.png";
+import close from "../../assets/icons/close.png";
 
 function Navbar() {
+  const [opened, setOpened] = useState(false);
+
   return (
     <NavbarDiv>
       <Container>
-        <ForLogo to="" onClick={toTop}>
+        <ForLogo
+          to=""
+          onClick={() => {
+            toTop();
+            setOpened(false);
+          }}
+        >
           <Logo />
         </ForLogo>
         <RightSide>
@@ -29,10 +42,33 @@ function Navbar() {
           </Links>
           <Right>
             <SelectLang />
-            <Button to='/home#contact'>Contact</Button>
+            <Button to="/home#contact">Contact</Button>
           </Right>
+          <Burger onClick={() => setOpened((p) => !p)}>
+            <img src={opened ? close : burger} alt="open-close menu" />
+          </Burger>
         </RightSide>
       </Container>
+      <Menu opened={`${opened}`}>
+        <MenuContainer>
+          <NavbarLink onClick={() => setOpened(false)} to="/home#direction">
+            Direction
+          </NavbarLink>
+          <NavbarLink onClick={() => setOpened(false)} to="/home#services">
+            Services
+          </NavbarLink>
+          <NavbarLink onClick={() => setOpened(false)} to="/home#portfolio">
+            Portfolio
+          </NavbarLink>
+          <NavbarLink onClick={() => setOpened(false)} to="/home#team">
+            Team
+          </NavbarLink>
+          <SelectLang />
+          <Button onClick={() => setOpened(false)} to="/home#contact">
+            Contact
+          </Button>
+        </MenuContainer>
+      </Menu>
     </NavbarDiv>
   );
 }

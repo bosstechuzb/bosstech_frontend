@@ -9,6 +9,15 @@ export const Container = styled.div`
   line-height: 20px;
   color: #18191f;
   user-select: none;
+
+  @media screen and (max-width: 990px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+    font-size: 17px;
+  }
 `;
 
 export const Header = styled.div`
