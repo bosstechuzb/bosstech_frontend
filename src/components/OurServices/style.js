@@ -20,7 +20,7 @@ export const Title = styled.h2`
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  line-height: 38px;
+  line-height: 1.1;
   color: #535353;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@ export const Description = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.15;
   color: #1d1d27;
 
   @media screen and (max-width: 500px) {
@@ -91,8 +91,8 @@ export const Item = styled.div`
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 1.1;
     color: #1d1d27;
   }
 
@@ -100,8 +100,8 @@ export const Item = styled.div`
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 1.15;
     color: #1d1d27;
   }
 

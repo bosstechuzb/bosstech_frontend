@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { globalContainer } from "./../../root/style";
 
 export const OuterContainer = styled.div`
-  min-height: calc(100vh - 65px);
+  min-height: 500px;
   background-color: #fff;
   position: relative;
   display: flex;

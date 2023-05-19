@@ -37,28 +37,28 @@ function OurServices() {
             <Box>
               <img src={mobile} alt="IT" />
             </Box>
-            <h3>IT consulting</h3>
+            <h3>Mobile Development</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
           </Item>
           <Item>
             <Box>
               <img src={web} alt="IT" />
             </Box>
-            <h3>IT consulting</h3>
+            <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
           </Item>
           <Item>
             <Box>
               <img src={social} alt="IT" />
             </Box>
-            <h3>IT consulting</h3>
+            <h3>Social Media Marketing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
           </Item>
           <Item>
             <Box>
               <img src={design} alt="IT" />
             </Box>
-            <h3>IT consulting</h3>
+            <h3>UX|UI Design</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
           </Item>
         </Items>

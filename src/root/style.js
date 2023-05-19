@@ -28,7 +28,7 @@ export const globalButton = css`
     transform: translateY(-2px);
   }
   &:active {
-    transform: translateY(-2px);
+    transform: translateY(0);
   }
 `;
 

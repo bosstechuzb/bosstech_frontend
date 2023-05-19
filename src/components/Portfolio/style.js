@@ -156,4 +156,13 @@ CardFooter.Link = styled.a`
   color: #000;
   border-bottom: 1.33333px solid #1b5bf7;
   padding-block: 10px;
+
+  &:hover svg {
+    transform: translate(2px, -2px);
+  }
+
+  svg {
+    width: 15px;
+    transition: 0.2s linear;
+  }
 `;
