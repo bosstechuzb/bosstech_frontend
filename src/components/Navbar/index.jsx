@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import {
+  OuterContainer,
   Container,
   ForLogo,
   Links,
-  NavbarDiv,
   NavbarLink,
   RightSide,
   Right,
@@ -22,7 +22,7 @@ function Navbar() {
   const [opened, setOpened] = useState(false);
 
   return (
-    <NavbarDiv>
+    <OuterContainer>
       <Container>
         <ForLogo
           to=""
@@ -69,7 +69,7 @@ function Navbar() {
           </Button>
         </MenuContainer>
       </Menu>
-    </NavbarDiv>
+    </OuterContainer>
   );
 }
 

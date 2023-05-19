@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { globalContainer } from "../../root/style";
 
-export const OurServicesDiv = styled.div`
+export const OuterContainer = styled.div`
   background-color: #fff;
   min-height: 20vh;
   padding-block: 50px 100px;

@@ -66,6 +66,10 @@ export const Items = styled.div`
   flex-wrap: wrap;
   column-gap: 20px;
   row-gap: 15px;
+  
+  @media screen and (max-width: 400px) {
+    row-gap: 25px;
+  }
 `;
 
 export const Item = styled.div`
@@ -79,6 +83,10 @@ export const Item = styled.div`
   font-size: 16px;
   line-height: 19px;
   color: #1d1d27;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 export const RightSide = styled.div`

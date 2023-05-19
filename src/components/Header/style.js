@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { globalContainer } from "./../../root/style";
 
-export const HeaderDiv = styled.div`
+export const OuterContainer = styled.div`
   min-height: calc(100vh - 65px);
   background-color: #fff;
   position: relative;

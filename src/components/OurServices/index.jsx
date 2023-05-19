@@ -1,11 +1,11 @@
 import React from "react";
 import {
+  OuterContainer,
   Box,
   Container,
   Description,
   Item,
   Items,
-  OurServicesDiv,
   Title,
 } from "./style";
 import it from "../../assets/icons/ourServices/it.svg";
@@ -16,7 +16,7 @@ import design from "../../assets/icons/ourServices/design.svg";
 
 function OurServices() {
   return (
-    <OurServicesDiv>
+    <OuterContainer>
       <Container>
         <Title>
           Our Services <span />
@@ -63,7 +63,7 @@ function OurServices() {
           </Item>
         </Items>
       </Container>
-    </OurServicesDiv>
+    </OuterContainer>
   );
 }
 

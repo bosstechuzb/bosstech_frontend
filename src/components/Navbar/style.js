@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { globalContainer } from "./../../root/style";
 import { Link } from "react-router-dom";
 
-export const NavbarDiv = styled.div`
+export const OuterContainer = styled.div`
   background-color: #e0e7f9;
   position: sticky;
   z-index: 10;

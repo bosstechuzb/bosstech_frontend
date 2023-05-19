@@ -1,8 +1,8 @@
 import React from "react";
 import {
-  Container,
-  HeaderDiv,
+  OuterContainer,
   Img,
+  Container,
   RightImg,
   LeftSide,
   Logo,
@@ -15,7 +15,7 @@ import { ReactComponent as LogoImg } from "../../assets/images/header/logo.svg";
 
 function Header() {
   return (
-    <HeaderDiv>
+    <OuterContainer>
       <Img>
         <img src={backgroundImg} alt="people" />
       </Img>
@@ -32,7 +32,7 @@ function Header() {
           <img src={rightSideImg} alt="people" />
         </RightImg>
       </Container>
-    </HeaderDiv>
+    </OuterContainer>
   );
 }
 
