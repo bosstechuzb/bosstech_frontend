@@ -27,6 +27,10 @@ export const ForLogo = styled(Link)`
     width: 100%;
   }
 
+  @media screen and (max-width: 1440px) {
+    width: 120px;
+  }
+
   @media screen and (max-width: 990px) {
     width: 100px;
   }
@@ -73,12 +77,18 @@ export const NavbarLink = styled(Link)`
     color: #1b5bf7;
   }
 
+  @media screen and (max-width: 1440px) {
+    font-size: 16px;
+  }
+
   @media screen and (max-width: 990px) {
     font-size: 15px;
   }
 
   @media screen and (max-width: 767px) {
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-block: 5px;
   }
 `;
 

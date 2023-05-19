@@ -10,13 +10,19 @@ export const Container = styled.div`
   color: #18191f;
   user-select: none;
 
+  @media screen and (max-width: 1440px) {
+    font-size: 16px;
+  }
+
   @media screen and (max-width: 990px) {
     font-size: 15px;
   }
 
   @media screen and (max-width: 767px) {
     margin-top: 15px;
-    font-size: 17px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-block: 5px;
   }
 `;
 
