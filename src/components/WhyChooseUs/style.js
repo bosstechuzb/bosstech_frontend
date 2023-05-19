@@ -50,7 +50,10 @@ export const Items = styled.div`
 
   @media screen and (max-width: 1000px) {
     max-width: 600px;
-    gap: 30px;
+  }
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+    row-gap: 30px;
   }
 `;
 
@@ -65,8 +68,9 @@ export const Item = styled.div`
     width: calc(100% / 2 - 20px / 2);
     justify-content: start;
   }
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 500px) {
     width: 100%;
+    max-width: 200px;
     justify-content: start;
   }
 `;
