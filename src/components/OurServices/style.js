@@ -3,7 +3,7 @@ import { globalContainer } from "../../root/style";
 
 export const OurServicesDiv = styled.div`
   background-color: #fff;
-  min-height: 50vh;
+  min-height: 20vh;
   padding-block: 50px 100px;
 `;
 
