@@ -6,6 +6,7 @@ import SeoSolution from "../../components/SeoSolution";
 import WhyChooseUs from "../../components/WhyChooseUs";
 import Portfolio from "../../components/Portfolio";
 import OurTeam from "../../components/OurTeam";
+import HowWeWork from "../../components/HowWeWork";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <WhyChooseUs />
       <Portfolio />
       <OurTeam />
+      <HowWeWork />
       home page Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
       ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
