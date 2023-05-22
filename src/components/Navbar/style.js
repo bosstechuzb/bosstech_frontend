@@ -57,7 +57,7 @@ export const Links = styled.div`
   }
 `;
 
-export const NavbarLink = styled(Link)`
+export const NavbarLink = styled.a`
   text-decoration: none;
   padding-block: 10px;
   font-family: "Manrope";
@@ -107,7 +107,7 @@ export const Right = styled.div`
   }
 `;
 
-export const Button = styled(Link)`
+export const Button = styled.a`
   ${globalButton}
 `;
 

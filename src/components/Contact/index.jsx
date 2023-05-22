@@ -13,7 +13,7 @@ function Contact() {
   };
 
   return (
-    <OuterContainer>
+    <OuterContainer id="contact">
       <Container>
         <Box>
           <Box.LeftSide onSubmit={handleSubmit}>

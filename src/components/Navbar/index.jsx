@@ -35,14 +35,14 @@ function Navbar() {
         </ForLogo>
         <RightSide>
           <Links>
-            <NavbarLink to="/home#direction">Direction</NavbarLink>
-            <NavbarLink to="/home#services">Services</NavbarLink>
-            <NavbarLink to="/home#portfolio">Portfolio</NavbarLink>
-            <NavbarLink to="/home#team">Team</NavbarLink>
+            <NavbarLink href="#direction">Direction</NavbarLink>
+            <NavbarLink href="#services">Services</NavbarLink>
+            <NavbarLink href="#portfolio">Portfolio</NavbarLink>
+            <NavbarLink href="#team">Team</NavbarLink>
           </Links>
           <Right>
             <SelectLang />
-            <Button to="/home#contact">Contact</Button>
+            <Button href="#contact">Contact</Button>
           </Right>
           <Burger onClick={() => setOpened((p) => !p)}>
             <img src={opened ? close : burger} alt="open-close menu" />
@@ -51,20 +51,20 @@ function Navbar() {
       </Container>
       <Menu opened={`${opened}`}>
         <MenuContainer>
-          <NavbarLink onClick={() => setOpened(false)} to="/home#direction">
+          <NavbarLink onClick={() => setOpened(false)} href="/home#direction">
             Direction
           </NavbarLink>
-          <NavbarLink onClick={() => setOpened(false)} to="/home#services">
+          <NavbarLink onClick={() => setOpened(false)} href="/home#services">
             Services
           </NavbarLink>
-          <NavbarLink onClick={() => setOpened(false)} to="/home#portfolio">
+          <NavbarLink onClick={() => setOpened(false)} href="/home#portfolio">
             Portfolio
           </NavbarLink>
-          <NavbarLink onClick={() => setOpened(false)} to="/home#team">
+          <NavbarLink onClick={() => setOpened(false)} href="/home#team">
             Team
           </NavbarLink>
           <SelectLang />
-          <Button onClick={() => setOpened(false)} to="/home#contact">
+          <Button onClick={() => setOpened(false)} href="#contact">
             Contact
           </Button>
         </MenuContainer>

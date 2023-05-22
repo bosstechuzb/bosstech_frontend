@@ -16,7 +16,7 @@ import design from "../../assets/icons/ourServices/design.svg";
 
 function OurServices() {
   return (
-    <OuterContainer>
+    <OuterContainer id="services">
       <Container>
         <Title>
           Our Services <span />

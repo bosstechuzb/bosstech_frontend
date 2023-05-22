@@ -14,7 +14,7 @@ import check from "../../assets/icons/check.svg";
 
 function SeoSolution() {
   return (
-    <OuterContainer>
+    <OuterContainer id="direction">
       <Container>
         <LeftSide>
           <Title>The best SEO solution</Title>

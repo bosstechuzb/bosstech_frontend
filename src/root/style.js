@@ -23,6 +23,7 @@ export const globalButton = css`
   line-height: 20px;
   color: #fff;
   transition: 0.2s linear;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-2px);

@@ -20,7 +20,7 @@ import rent from "../../assets/images/portfolio/rent.png";
 
 function Portfolio() {
   return (
-    <OuterContainer>
+    <OuterContainer id="portfolio">
       <Container>
         <Top>
           <LeftSide>

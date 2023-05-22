@@ -53,7 +53,7 @@ function OurTeam() {
   });
 
   return (
-    <OuterContainer>
+    <OuterContainer id="team">
       <Container>
         <Title>
           Our Team <span />
