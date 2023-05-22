@@ -8,6 +8,7 @@ import Portfolio from "../../components/Portfolio";
 import OurTeam from "../../components/OurTeam";
 import HowWeWork from "../../components/HowWeWork";
 import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
 
 function HomePage() {
   return (
@@ -21,101 +22,7 @@ function HomePage() {
       <OurTeam />
       <HowWeWork />
       <Contact />
-      home page Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
-      ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
-      iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Eligendi veniam deserunt neque optio id laudantium
-      eveniet architecto ut ratione, assumenda qui aperiam debitis hic. Repellat
-      repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Eligendi veniam deserunt neque optio id
-      laudantium eveniet architecto ut ratione, assumenda qui aperiam debitis
-      hic. Repellat repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Eligendi veniam deserunt
-      neque optio id laudantium eveniet architecto ut ratione, assumenda qui
-      aperiam debitis hic. Repellat repudiandae mollitia iusto? Ipsum,
-      explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
-      ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
-      iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Eligendi veniam deserunt neque optio id laudantium
-      eveniet architecto ut ratione, assumenda qui aperiam debitis hic. Repellat
-      repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Eligendi veniam deserunt neque optio id
-      laudantium eveniet architecto ut ratione, assumenda qui aperiam debitis
-      hic. Repellat repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Eligendi veniam deserunt
-      neque optio id laudantium eveniet architecto ut ratione, assumenda qui
-      aperiam debitis hic. Repellat repudiandae mollitia iusto? Ipsum,
-      explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
-      ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
-      iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Eligendi veniam deserunt neque optio id laudantium
-      eveniet architecto ut ratione, assumenda qui aperiam debitis hic. Repellat
-      repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Eligendi veniam deserunt neque optio id
-      laudantium eveniet architecto ut ratione, assumenda qui aperiam debitis
-      hic. Repellat repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Eligendi veniam deserunt
-      neque optio id laudantium eveniet architecto ut ratione, assumenda qui
-      aperiam debitis hic. Repellat repudiandae mollitia iusto? Ipsum,
-      explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
-      ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
-      iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Eligendi veniam deserunt neque optio id laudantium
-      eveniet architecto ut ratione, assumenda qui aperiam debitis hic. Repellat
-      repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Eligendi veniam deserunt neque optio id
-      laudantium eveniet architecto ut ratione, assumenda qui aperiam debitis
-      hic. Repellat repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Eligendi veniam deserunt
-      neque optio id laudantium eveniet architecto ut ratione, assumenda qui
-      aperiam debitis hic. Repellat repudiandae mollitia iusto? Ipsum,
-      explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
-      ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
-      iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Eligendi veniam deserunt neque optio id laudantium
-      eveniet architecto ut ratione, assumenda qui aperiam debitis hic. Repellat
-      repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Eligendi veniam deserunt neque optio id
-      laudantium eveniet architecto ut ratione, assumenda qui aperiam debitis
-      hic. Repellat repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Eligendi veniam deserunt
-      neque optio id laudantium eveniet architecto ut ratione, assumenda qui
-      aperiam debitis hic. Repellat repudiandae mollitia iusto? Ipsum,
-      explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
-      ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
-      iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Eligendi veniam deserunt neque optio id laudantium
-      eveniet architecto ut ratione, assumenda qui aperiam debitis hic. Repellat
-      repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Eligendi veniam deserunt neque optio id
-      laudantium eveniet architecto ut ratione, assumenda qui aperiam debitis
-      hic. Repellat repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Eligendi veniam deserunt
-      neque optio id laudantium eveniet architecto ut ratione, assumenda qui
-      aperiam debitis hic. Repellat repudiandae mollitia iusto? Ipsum,
-      explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
-      ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
-      iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Eligendi veniam deserunt neque optio id laudantium
-      eveniet architecto ut ratione, assumenda qui aperiam debitis hic. Repellat
-      repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Eligendi veniam deserunt neque optio id
-      laudantium eveniet architecto ut ratione, assumenda qui aperiam debitis
-      hic. Repellat repudiandae mollitia iusto? Ipsum, explicabo! Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Eligendi veniam deserunt
-      neque optio id laudantium eveniet architecto ut ratione, assumenda qui
-      aperiam debitis hic. Repellat repudiandae mollitia iusto? Ipsum,
-      explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Eligendi veniam deserunt neque optio id laudantium eveniet architecto ut
-      ratione, assumenda qui aperiam debitis hic. Repellat repudiandae mollitia
-      iusto? Ipsum, explicabo!
+      <Footer />
     </>
   );
 }
