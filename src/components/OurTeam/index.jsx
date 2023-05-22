@@ -19,6 +19,7 @@ import member2 from "../../assets/images/ourTeam/member-2.png";
 import member3 from "../../assets/images/ourTeam/member-3.png";
 import member4 from "../../assets/images/ourTeam/member-4.png";
 import member5 from "../../assets/images/ourTeam/member-5.png";
+import { Fade } from "react-reveal";
 
 function OurTeam() {
   // Settings of slider
@@ -56,80 +57,86 @@ function OurTeam() {
     <OuterContainer id="team">
       <Container>
         <Title>
-          Our Team <span />
+          <Fade>
+            Our Team <span />
+          </Fade>
         </Title>
         <Description>
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.
+          <Fade>
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </Fade>
         </Description>
         <Carousel>
-          <Slider {...settings}>
-            <ItemContainer>
-              <Item>
-                <Item.ImageContainer url={pseudo}>
-                  <Item.Image url={member1} />
-                </Item.ImageContainer>
-                <Item.Name>Yokit Den</Item.Name>
-                <Item.Position>CEO</Item.Position>
-                <Item.Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
-                </Item.Text>
-              </Item>
-            </ItemContainer>
-            <ItemContainer>
-              <Item>
-                <Item.ImageContainer url={pseudo}>
-                  <Item.Image url={member2} />
-                </Item.ImageContainer>
-                <Item.Name>Yokit Den</Item.Name>
-                <Item.Position>Web developer</Item.Position>
-                <Item.Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
-                </Item.Text>
-              </Item>
-            </ItemContainer>
-            <ItemContainer>
-              <Item>
-                <Item.ImageContainer url={pseudo}>
-                  <Item.Image url={member3} />
-                </Item.ImageContainer>
-                <Item.Name>Yokit Den</Item.Name>
-                <Item.Position>UX|UI Designer</Item.Position>
-                <Item.Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
-                </Item.Text>
-              </Item>
-            </ItemContainer>
-            <ItemContainer>
-              <Item>
-                <Item.ImageContainer url={pseudo}>
-                  <Item.Image url={member4} />
-                </Item.ImageContainer>
-                <Item.Name>Yokit Den</Item.Name>
-                <Item.Position>Android developer</Item.Position>
-                <Item.Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
-                </Item.Text>
-              </Item>
-            </ItemContainer>
-            <ItemContainer>
-              <Item>
-                <Item.ImageContainer url={pseudo}>
-                  <Item.Image url={member5} />
-                </Item.ImageContainer>
-                <Item.Name>Yokit Den</Item.Name>
-                <Item.Position>Front end developer</Item.Position>
-                <Item.Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore
-                </Item.Text>
-              </Item>
-            </ItemContainer>
-          </Slider>
+          <Fade>
+            <Slider {...settings}>
+              <ItemContainer>
+                <Item>
+                  <Item.ImageContainer url={pseudo}>
+                    <Item.Image url={member1} />
+                  </Item.ImageContainer>
+                  <Item.Name>Yokit Den</Item.Name>
+                  <Item.Position>CEO</Item.Position>
+                  <Item.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </Item.Text>
+                </Item>
+              </ItemContainer>
+              <ItemContainer>
+                <Item>
+                  <Item.ImageContainer url={pseudo}>
+                    <Item.Image url={member2} />
+                  </Item.ImageContainer>
+                  <Item.Name>Yokit Den</Item.Name>
+                  <Item.Position>Web developer</Item.Position>
+                  <Item.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </Item.Text>
+                </Item>
+              </ItemContainer>
+              <ItemContainer>
+                <Item>
+                  <Item.ImageContainer url={pseudo}>
+                    <Item.Image url={member3} />
+                  </Item.ImageContainer>
+                  <Item.Name>Yokit Den</Item.Name>
+                  <Item.Position>UX|UI Designer</Item.Position>
+                  <Item.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </Item.Text>
+                </Item>
+              </ItemContainer>
+              <ItemContainer>
+                <Item>
+                  <Item.ImageContainer url={pseudo}>
+                    <Item.Image url={member4} />
+                  </Item.ImageContainer>
+                  <Item.Name>Yokit Den</Item.Name>
+                  <Item.Position>Android developer</Item.Position>
+                  <Item.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </Item.Text>
+                </Item>
+              </ItemContainer>
+              <ItemContainer>
+                <Item>
+                  <Item.ImageContainer url={pseudo}>
+                    <Item.Image url={member5} />
+                  </Item.ImageContainer>
+                  <Item.Name>Yokit Den</Item.Name>
+                  <Item.Position>Front end developer</Item.Position>
+                  <Item.Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                  </Item.Text>
+                </Item>
+              </ItemContainer>
+            </Slider>
+          </Fade>
         </Carousel>
       </Container>
     </OuterContainer>

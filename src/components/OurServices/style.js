@@ -76,6 +76,7 @@ export const Box = styled.div`
 
   img {
     max-width: 64px;
+    user-select: none;
   }
 `;
 

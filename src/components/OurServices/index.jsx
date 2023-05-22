@@ -13,53 +13,78 @@ import mobile from "../../assets/icons/ourServices/mobile.svg";
 import web from "../../assets/icons/ourServices/web.svg";
 import social from "../../assets/icons/ourServices/social.svg";
 import design from "../../assets/icons/ourServices/design.svg";
+import { Fade } from "react-reveal";
 
 function OurServices() {
   return (
     <OuterContainer id="services">
       <Container>
         <Title>
-          Our Services <span />
+          <Fade bottom>
+            Our Services <span />
+          </Fade>
         </Title>
         <Description>
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.
+          <Fade bottom>
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </Fade>
         </Description>
         <Items>
           <Item>
             <Box>
               <img src={it} alt="IT" />
             </Box>
-            <h3>IT consulting</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <Fade bottom>
+              <h3>IT consulting</h3>
+            </Fade>
+            <Fade bottom>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            </Fade>
           </Item>
           <Item>
             <Box>
               <img src={mobile} alt="IT" />
             </Box>
-            <h3>Mobile Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <Fade bottom>
+              <h3>Mobile Development</h3>
+            </Fade>
+            <Fade bottom>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            </Fade>
           </Item>
           <Item>
             <Box>
               <img src={web} alt="IT" />
             </Box>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <Fade bottom>
+              <h3>Web Development</h3>
+            </Fade>
+            <Fade bottom>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            </Fade>
           </Item>
           <Item>
             <Box>
               <img src={social} alt="IT" />
             </Box>
-            <h3>Social Media Marketing</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <Fade bottom>
+              <h3>Social Media Marketing</h3>
+            </Fade>
+            <Fade bottom>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            </Fade>
           </Item>
           <Item>
             <Box>
               <img src={design} alt="IT" />
             </Box>
-            <h3>UX|UI Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <Fade bottom>
+              <h3>UX|UI Design</h3>
+            </Fade>
+            <Fade bottom>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            </Fade>
           </Item>
         </Items>
       </Container>

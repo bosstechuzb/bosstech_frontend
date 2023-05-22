@@ -43,15 +43,16 @@ export const GlobalStyles = createGlobalStyle`
     /* Style HTML */
     html {
         scroll-behavior: smooth;
-    }
-    /* Style Body */
-    body {
+      }
+      /* Style Body */
+      body {
         font-family: "Roboto", sans-serif;
         background-color: #fff;
         color: #18191F;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
+        overflow-x: hidden;
     }
     /* Style Scrollbar and Selection */
     ::-webkit-scrollbar {

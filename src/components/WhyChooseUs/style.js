@@ -73,6 +73,10 @@ export const Item = styled.div`
     max-width: 200px;
     justify-content: start;
   }
+
+  img {
+    user-select: none;
+  }
 `;
 
 export const ItemRight = styled.div`

@@ -12,6 +12,7 @@ import {
 import backgroundImg from "../../assets/images/header/background.svg";
 import rightSideImg from "../../assets/images/header/right-side.svg";
 import { ReactComponent as LogoImg } from "../../assets/images/header/logo.svg";
+import { Fade } from "react-reveal";
 
 function Header() {
   return (
@@ -22,14 +23,22 @@ function Header() {
       <Container>
         <LeftSide>
           <Logo>
-            <LogoImg />
+            <Fade bottom>
+              <LogoImg />
+            </Fade>
           </Logo>
           <Hr />
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <Text>Lorem ipsum</Text>
+          <Fade bottom>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </Fade>
+          <Fade bottom>
+            <Text>Lorem ipsum</Text>
+          </Fade>
         </LeftSide>
         <RightImg>
-          <img src={rightSideImg} alt="people" />
+          <Fade right>
+            <img src={rightSideImg} alt="people" />
+          </Fade>
         </RightImg>
       </Container>
     </OuterContainer>
