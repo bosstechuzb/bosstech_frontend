@@ -61,12 +61,12 @@ function OurTeam() {
             Our Team <span />
           </Fade>
         </Title>
-        <Description>
-          <Fade>
+        <Fade>
+          <Description>
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua.
-          </Fade>
-        </Description>
+          </Description>
+        </Fade>
         <Carousel>
           <Fade>
             <Slider {...settings}>

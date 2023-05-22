@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { globalContainer } from "./../../root/style";
+import { globalButton, globalContainer } from "./../../root/style";
 
 export const OuterContainer = styled.div`
   min-height: 500px;
@@ -98,17 +98,32 @@ export const Hr = styled.div`
 
 export const Text = styled.div`
   margin-top: 20px;
+  height: 70px;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 30px;
   color: #1f50eb;
+  position: relative;
+  z-index: 2;
 
   @media screen and (max-width: 500px) {
+    height: 50px;
     margin-top: 15px;
     font-size: 20px;
   }
+`;
+
+export const ButtonRow = styled.div`
+  margin-top: 10px;
+`;
+
+export const Button = styled.a`
+  ${globalButton}
+  padding-block: 11px;
+  position: relative;
+  z-index: 3;
 `;
 
 export const RightImg = styled.div`

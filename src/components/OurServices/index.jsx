@@ -24,12 +24,12 @@ function OurServices() {
             Our Services <span />
           </Fade>
         </Title>
-        <Description>
-          <Fade bottom>
+        <Fade bottom>
+          <Description>
             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua.
-          </Fade>
-        </Description>
+          </Description>
+        </Fade>
         <Items>
           <Item>
             <Box>
