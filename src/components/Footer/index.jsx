@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Bottom,
   Container,
@@ -18,8 +18,12 @@ import { ReactComponent as Twitter } from "../../assets/icons/footer/twitter.svg
 import { ReactComponent as Linkedin } from "../../assets/icons/footer/linkedin-in.svg";
 import { ReactComponent as Instagram } from "../../assets/icons/footer/instagram.svg";
 import { Fade } from "react-reveal";
+import { LangContext } from "./../../context/lang/index";
+import { data_footer } from "../../resources/data";
 
 function Footer() {
+  const [language] = useContext(LangContext);
+
   return (
     <OuterContainer>
       <Container>
@@ -31,42 +35,20 @@ function Footer() {
           </ForLogo>
         </LogoRow>
         <Links>
-          <LinkColumn>
-            <Fade top>
-              <LinkColumn.Title>
-                <span>Useful Link</span>
-              </LinkColumn.Title>
-              <LinkColumn.Link to="">About Us</LinkColumn.Link>
-              <LinkColumn.Link to="">About Services</LinkColumn.Link>
-              <LinkColumn.Link to="">About Departments</LinkColumn.Link>
-              <LinkColumn.Link to="">Services</LinkColumn.Link>
-              <LinkColumn.Link to="">Contact US</LinkColumn.Link>
-            </Fade>
-          </LinkColumn>
-          <LinkColumn>
-            <Fade top>
-              <LinkColumn.Title>
-                <span>The Services</span>
-              </LinkColumn.Title>
-              <LinkColumn.Link to="">About Us</LinkColumn.Link>
-              <LinkColumn.Link to="">About Services</LinkColumn.Link>
-              <LinkColumn.Link to="">About Departments</LinkColumn.Link>
-              <LinkColumn.Link to="">Services</LinkColumn.Link>
-              <LinkColumn.Link to="">Contact US</LinkColumn.Link>
-            </Fade>
-          </LinkColumn>
-          <LinkColumn>
-            <Fade top>
-              <LinkColumn.Title>
-                <span>Contact Us</span>
-              </LinkColumn.Title>
-              <LinkColumn.Link to="">About Us</LinkColumn.Link>
-              <LinkColumn.Link to="">About Services</LinkColumn.Link>
-              <LinkColumn.Link to="">About Departments</LinkColumn.Link>
-              <LinkColumn.Link to="">Services</LinkColumn.Link>
-              <LinkColumn.Link to="">Contact US</LinkColumn.Link>
-            </Fade>
-          </LinkColumn>
+          {data_footer[language]?.link_columns.map((item, index) => (
+            <LinkColumn key={index}>
+              <Fade top>
+                <LinkColumn.Title>
+                  <span>{item.title}</span>
+                </LinkColumn.Title>
+                {item.links.map(({ name, to }, index) => (
+                  <LinkColumn.Link to={to} key={index}>
+                    {name}
+                  </LinkColumn.Link>
+                ))}
+              </Fade>
+            </LinkColumn>
+          ))}
         </Links>
         <Row>
           <RowLeftSide>
@@ -87,10 +69,15 @@ function Footer() {
           </RowLeftSide>
           <RowRightSide>
             <Fade right>
-              <RowRightSide.Text>Newsletter</RowRightSide.Text>
+              <RowRightSide.Text>
+                {data_footer[language]?.form.text}
+              </RowRightSide.Text>
               <RowRightSide.Form onSubmit={(e) => e.preventDefault()}>
-                <input type="text" placeholder="Enter Your email" />
-                <button>Subscribe</button>
+                <input
+                  type="text"
+                  placeholder={data_footer[language]?.form.input}
+                />
+                <button>{data_footer[language]?.form.button}</button>
               </RowRightSide.Form>
             </Fade>
           </RowRightSide>
@@ -102,7 +89,9 @@ function Footer() {
             </Fade>
           </Bottom.Hr>
           <Fade top>
-            <Bottom.Copyright>© 2045 All Rights Reserved</Bottom.Copyright>
+            <Bottom.Copyright>
+              {data_footer[language]?.copyright}
+            </Bottom.Copyright>
           </Fade>
         </Bottom>
       </Container>

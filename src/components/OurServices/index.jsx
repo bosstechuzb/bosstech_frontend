@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   OuterContainer,
   Box,
@@ -8,84 +8,42 @@ import {
   Items,
   Title,
 } from "./style";
-import it from "../../assets/icons/ourServices/it.svg";
-import mobile from "../../assets/icons/ourServices/mobile.svg";
-import web from "../../assets/icons/ourServices/web.svg";
-import social from "../../assets/icons/ourServices/social.svg";
-import design from "../../assets/icons/ourServices/design.svg";
 import { Fade } from "react-reveal";
+import { LangContext } from "./../../context/lang/index";
+import { data_our_services } from "../../resources/data";
 
 function OurServices() {
+  const [language] = useContext(LangContext);
+
   return (
     <OuterContainer id="services">
       <Container>
         <Title>
           <Fade bottom>
-            Our Services <span />
+            <>
+              {data_our_services[language]?.title} <span />
+            </>
           </Fade>
         </Title>
         <Fade bottom>
-          <Description>
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
-          </Description>
+          <Description>{data_our_services[language]?.description}</Description>
         </Fade>
         <Items>
-          <Item>
-            <Box>
-              <img src={it} alt="IT" />
-            </Box>
-            <Fade bottom>
-              <h3>IT consulting</h3>
-            </Fade>
-            <Fade bottom>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-            </Fade>
-          </Item>
-          <Item>
-            <Box>
-              <img src={mobile} alt="IT" />
-            </Box>
-            <Fade bottom>
-              <h3>Mobile Development</h3>
-            </Fade>
-            <Fade bottom>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-            </Fade>
-          </Item>
-          <Item>
-            <Box>
-              <img src={web} alt="IT" />
-            </Box>
-            <Fade bottom>
-              <h3>Web Development</h3>
-            </Fade>
-            <Fade bottom>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-            </Fade>
-          </Item>
-          <Item>
-            <Box>
-              <img src={social} alt="IT" />
-            </Box>
-            <Fade bottom>
-              <h3>Social Media Marketing</h3>
-            </Fade>
-            <Fade bottom>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-            </Fade>
-          </Item>
-          <Item>
-            <Box>
-              <img src={design} alt="IT" />
-            </Box>
-            <Fade bottom>
-              <h3>UX|UI Design</h3>
-            </Fade>
-            <Fade bottom>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-            </Fade>
-          </Item>
+          {data_our_services[language]?.items.map(
+            ({ icon, title, description }, index) => (
+              <Item key={index}>
+                <Box>
+                  <img src={icon} alt="IT" />
+                </Box>
+                <Fade bottom>
+                  <h3>{title}</h3>
+                </Fade>
+                <Fade bottom>
+                  <p>{description}</p>
+                </Fade>
+              </Item>
+            )
+          )}
         </Items>
       </Container>
     </OuterContainer>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   BigTitle,
   Card,
@@ -14,82 +14,53 @@ import {
 } from "./style";
 import { ReactComponent as Linkedin } from "../../assets/icons/portfolio/linkedin.svg";
 import { ReactComponent as Arrow } from "../../assets/icons/portfolio/arrow-top-right.svg";
-import ahuse from "../../assets/images/portfolio/ahuse.png";
-import dashboard from "../../assets/images/portfolio/dashboard.png";
-import rent from "../../assets/images/portfolio/rent.png";
 import { Fade } from "react-reveal";
+import { data_our_portfolio } from "../../resources/data";
+import { LangContext } from "./../../context/lang/index";
 
 function Portfolio() {
+  const [language] = useContext(LangContext);
+
   return (
     <OuterContainer id="portfolio">
       <Container>
         <Top>
           <LeftSide>
             <Fade bottom>
-              <LittleTitle>Our Portofolio</LittleTitle>
+              <LittleTitle>{data_our_portfolio[language]?.title}</LittleTitle>
             </Fade>
             <Fade bottom>
-              <BigTitle>Discover Our Recent Projects And Showcases</BigTitle>
+              <BigTitle>{data_our_portfolio[language]?.description}</BigTitle>
             </Fade>
           </LeftSide>
           <Fade bottom>
             <Visit href="https://linkedin.com" target="_blank">
-              <Linkedin /> Visit our Linkedin
+              <Linkedin /> {data_our_portfolio[language]?.button}
             </Visit>
           </Fade>
         </Top>
         <Cards>
-          <Card>
-            <CardImage url={ahuse} />
-            <Fade>
-              <CardFooter>
-                <CardFooter.Title>Ahuse</CardFooter.Title>
-                <CardFooter.Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros.
-                </CardFooter.Description>
-                <div>
-                  <CardFooter.Link href="https://linkedin.com" target="_blank">
-                    View in Linkedin <Arrow />
-                  </CardFooter.Link>
-                </div>
-              </CardFooter>
-            </Fade>
-          </Card>
-          <Card>
-            <CardImage url={dashboard} />
-            <Fade>
-              <CardFooter>
-                <CardFooter.Title>App Dashboard</CardFooter.Title>
-                <CardFooter.Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros.
-                </CardFooter.Description>
-                <div>
-                  <CardFooter.Link href="https://linkedin.com" target="_blank">
-                    View in Linkedin <Arrow />
-                  </CardFooter.Link>
-                </div>
-              </CardFooter>
-            </Fade>
-          </Card>
-          <Card>
-            <CardImage url={rent} />
-            <CardFooter>
+          {data_our_portfolio[language]?.items.map((item, index) => (
+            <Card key={index}>
+              <CardImage url={item.image} />
               <Fade>
-                <CardFooter.Title>Easy Rent</CardFooter.Title>
-                <CardFooter.Description>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros.
-                </CardFooter.Description>
-                <div>
-                  <CardFooter.Link href="https://linkedin.com" target="_blank">
-                    View in Linkedin <Arrow />
-                  </CardFooter.Link>
-                </div>
+                <CardFooter>
+                  <CardFooter.Title>{item.title}</CardFooter.Title>
+                  <CardFooter.Description>
+                    {item.description}
+                  </CardFooter.Description>
+                  <div>
+                    <CardFooter.Link
+                      href="https://linkedin.com"
+                      target="_blank"
+                    >
+                      {data_our_portfolio[language]?.button} <Arrow />
+                    </CardFooter.Link>
+                  </div>
+                </CardFooter>
               </Fade>
-            </CardFooter>
-          </Card>
+            </Card>
+          ))}
         </Cards>
       </Container>
     </OuterContainer>

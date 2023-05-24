@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box, Container, OuterContainer, RightSideItem } from "./style";
 import mail from "../../assets/icons/contact/circledEnvelope.svg";
 import tel from "../../assets/icons/contact/phone.svg";
 import address from "../../assets/icons/contact/address.svg";
-import { Fade } from "react-reveal";
+import { LangContext } from "./../../context/lang/index";
+import { data_contact } from "../../resources/data";
 
 function Contact() {
+  const [language] = useContext(LangContext);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // var formData = new FormData(e.target);
@@ -16,78 +19,62 @@ function Contact() {
   return (
     <OuterContainer id="contact">
       <Container>
-        <Box>
-          <Box.LeftSide onSubmit={handleSubmit}>
-            <Fade>
+          <Box>
+            <Box.LeftSide onSubmit={handleSubmit}>
               <input
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder={data_contact[language]?.input_name}
                 minLength={2}
                 maxLength={100}
                 pattern="[A-Za-z\s]+"
                 title="Please include only letters"
                 required
               />
-            </Fade>
-            <Fade>
-              <input type="email" name="email" placeholder="Email" required />
-            </Fade>
-            <Fade>
+
               <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
+                type="text"
+                name="phone_email"
+                placeholder={data_contact[language]?.input_phone_email}
                 required
               />
-            </Fade>
-            <Fade>
               <textarea
-                placeholder="Message"
+                placeholder={data_contact[language]?.input_message}
                 name="message"
                 rows={8}
                 required
               ></textarea>
-            </Fade>
-            <div>
-              <Fade>
-                <button type="submit">SEND</button>
-              </Fade>
-            </div>
-          </Box.LeftSide>
-          <Box.RightSide>
-            <Fade right>
+              <div>
+                <button type="submit">{data_contact[language]?.button}</button>
+              </div>
+            </Box.LeftSide>
+            <Box.RightSide>
               <RightSideItem>
                 <img src={mail} alt="email" />
                 <a
-                  href="mailto:mail@domain.com"
+                  href={`mailto:${data_contact[language]?.email}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  mail@domain.com
+                  {data_contact[language]?.email}
                 </a>
               </RightSideItem>
-            </Fade>
-            <Fade right>
               <RightSideItem>
                 <img src={tel} alt="phone number" />
                 <a
-                  href="tel:+0010020034"
+                  href={`tel:${data_contact[language]?.phone}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  +001-002-0034
+                  {data_contact[language]?.phone}
                 </a>
               </RightSideItem>
-            </Fade>
-            <Fade right>
               <RightSideItem>
                 <img src={address} alt="address" />
-                <p>26th Street, Digital Villa</p>
+                <p>{data_contact[language]?.address}</p>
               </RightSideItem>
-            </Fade>
-          </Box.RightSide>
-        </Box>
+            </Box.RightSide>
+          </Box>
       </Container>
     </OuterContainer>
   );

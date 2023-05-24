@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Container,
   Description,
@@ -10,63 +10,36 @@ import {
   OuterContainer,
   Title,
 } from "./style";
-import satisfied from "../../assets/icons/whyChooseUs/satisfied.svg";
-import planning from "../../assets/icons/whyChooseUs/planning.svg";
-import clients from "../../assets/icons/whyChooseUs/clients.svg";
-import business from "../../assets/icons/whyChooseUs/business.svg";
 import { Fade } from "react-reveal";
+import { LangContext } from "./../../context/lang/index";
+import { data_why_choose_us } from "../../resources/data";
 
 function WhyChooseUs() {
+  const [language] = useContext(LangContext);
+
   return (
     <OuterContainer>
       <Container>
         <Fade bottom>
-          <Title>Why Choose Us</Title>
+          <Title>{data_why_choose_us[language]?.title}</Title>
         </Fade>
         <Fade bottom>
-          <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim
-            ad minim veniam, quis
-          </Description>
+          <Description>{data_why_choose_us[language]?.description}</Description>
         </Fade>
         <Items>
-          <Item>
-            <Fade right>
-              <img src={satisfied} alt="SATISFIED CLIENTS" />
-              <ItemRight>
-                <ItemNumber>99%</ItemNumber>
-                <ItemText>SATISFIED CLIENTS</ItemText>
-              </ItemRight>
-            </Fade>
-          </Item>
-          <Item>
-            <Fade right>
-              <img src={planning} alt="AWESOME planing" />
-              <ItemRight>
-                <ItemNumber>4700+</ItemNumber>
-                <ItemText>AWESOME planing</ItemText>
-              </ItemRight>
-            </Fade>
-          </Item>
-          <Item>
-            <Fade right>
-              <img src={clients} alt="CLIENTS" />
-              <ItemRight>
-                <ItemNumber>4500+</ItemNumber>
-                <ItemText>CLIENTS</ItemText>
-              </ItemRight>
-            </Fade>
-          </Item>
-          <Item>
-            <Fade right>
-              <img src={business} alt="DAILY business" />
-              <ItemRight>
-                <ItemNumber>19000+</ItemNumber>
-                <ItemText>DAILY business</ItemText>
-              </ItemRight>
-            </Fade>
-          </Item>
+          {data_why_choose_us[language]?.items.map(
+            ({ icon, number, text }, index) => (
+              <Item key={index}>
+                <Fade right>
+                  <img src={icon} alt={text} />
+                  <ItemRight>
+                    <ItemNumber>{number}</ItemNumber>
+                    <ItemText>{text}</ItemText>
+                  </ItemRight>
+                </Fade>
+              </Item>
+            )
+          )}
         </Items>
       </Container>
     </OuterContainer>

@@ -52,7 +52,7 @@ export const Links = styled.div`
   gap: 40px;
 
   /* Mobile */
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 850px) {
     display: none;
   }
 `;
@@ -102,7 +102,7 @@ export const Right = styled.div`
   }
 
   /* Mobile */
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 850px) {
     display: none;
   }
 `;
@@ -128,7 +128,7 @@ export const Burger = styled.button`
     max-height: 35px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 850.00000001px) {
     display: none;
   }
 `;

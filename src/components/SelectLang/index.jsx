@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Body, Container, Header, Arrow, Layer, Row } from "./style";
 import { ReactComponent as ArrowDown } from "../../assets/icons/arrow-down.svg";
 import eng from "../../assets/images/flags/eng.svg";
 import ru from "../../assets/images/flags/ru.svg";
 import uz from "../../assets/images/flags/uz.png";
+import { LangContext } from "../../context/lang";
 
 function Select() {
   const [opened, setOpened] = useState(false);
@@ -39,6 +40,7 @@ function Select() {
         : false,
     },
   ]);
+  const [, setLanguage] = useContext(LangContext);
 
   const select = (id, countryCode) => {
     setOptions(
@@ -49,6 +51,7 @@ function Select() {
     );
     document.documentElement.lang = countryCode;
     localStorage.setItem("lang", countryCode);
+    setLanguage(countryCode);
     setOpened(false);
   };
 

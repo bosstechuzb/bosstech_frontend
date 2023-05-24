@@ -2,7 +2,7 @@ import { css, createGlobalStyle } from "styled-components";
 
 export const globalContainer = css`
   @media screen and (max-width: 1600px) {
-    width: 94%;
+    width: 90%;
   }
 
   @media screen and (min-width: 1601px) {

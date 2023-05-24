@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   Container,
   Description,
@@ -14,14 +14,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // Import images
 import pseudo from "../../assets/images/ourTeam/pseudo.svg";
-import member1 from "../../assets/images/ourTeam/member-1.png";
-import member2 from "../../assets/images/ourTeam/member-2.png";
-import member3 from "../../assets/images/ourTeam/member-3.png";
-import member4 from "../../assets/images/ourTeam/member-4.png";
-import member5 from "../../assets/images/ourTeam/member-5.png";
 import { Fade } from "react-reveal";
+import { LangContext } from "./../../context/lang/index";
+import { data_our_team } from "../../resources/data";
 
 function OurTeam() {
+  const [language] = useContext(LangContext);
   // Settings of slider
   const [settings] = useState({
     arrows: false,
@@ -58,83 +56,29 @@ function OurTeam() {
       <Container>
         <Title>
           <Fade>
-            Our Team <span />
+            <>
+              {data_our_team[language]?.title} <span />
+            </>
           </Fade>
         </Title>
         <Fade>
-          <Description>
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
-          </Description>
+          <Description>{data_our_team[language]?.description}</Description>
         </Fade>
         <Carousel>
           <Fade>
             <Slider {...settings}>
-              <ItemContainer>
-                <Item>
-                  <Item.ImageContainer url={pseudo}>
-                    <Item.Image url={member1} />
-                  </Item.ImageContainer>
-                  <Item.Name>Yokit Den</Item.Name>
-                  <Item.Position>CEO</Item.Position>
-                  <Item.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore
-                  </Item.Text>
-                </Item>
-              </ItemContainer>
-              <ItemContainer>
-                <Item>
-                  <Item.ImageContainer url={pseudo}>
-                    <Item.Image url={member2} />
-                  </Item.ImageContainer>
-                  <Item.Name>Yokit Den</Item.Name>
-                  <Item.Position>Web developer</Item.Position>
-                  <Item.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore
-                  </Item.Text>
-                </Item>
-              </ItemContainer>
-              <ItemContainer>
-                <Item>
-                  <Item.ImageContainer url={pseudo}>
-                    <Item.Image url={member3} />
-                  </Item.ImageContainer>
-                  <Item.Name>Yokit Den</Item.Name>
-                  <Item.Position>UX|UI Designer</Item.Position>
-                  <Item.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore
-                  </Item.Text>
-                </Item>
-              </ItemContainer>
-              <ItemContainer>
-                <Item>
-                  <Item.ImageContainer url={pseudo}>
-                    <Item.Image url={member4} />
-                  </Item.ImageContainer>
-                  <Item.Name>Yokit Den</Item.Name>
-                  <Item.Position>Android developer</Item.Position>
-                  <Item.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore
-                  </Item.Text>
-                </Item>
-              </ItemContainer>
-              <ItemContainer>
-                <Item>
-                  <Item.ImageContainer url={pseudo}>
-                    <Item.Image url={member5} />
-                  </Item.ImageContainer>
-                  <Item.Name>Yokit Den</Item.Name>
-                  <Item.Position>Front end developer</Item.Position>
-                  <Item.Text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore
-                  </Item.Text>
-                </Item>
-              </ItemContainer>
+              {data_our_team[language]?.items.map((item, index) => (
+                <ItemContainer key={index}>
+                  <Item>
+                    <Item.ImageContainer url={pseudo}>
+                      <Item.Image url={item.image} />
+                    </Item.ImageContainer>
+                    <Item.Name>{item.name}</Item.Name>
+                    <Item.Position>{item.position}</Item.Position>
+                    <Item.Text>{item.text}</Item.Text>
+                  </Item>
+                </ItemContainer>
+              ))}
             </Slider>
           </Fade>
         </Carousel>

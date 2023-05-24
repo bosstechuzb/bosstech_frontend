@@ -101,7 +101,6 @@ export const Item = styled.div`
   width: calc(100% / 4 - (50px * 3) / 4);
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
   align-items: center;
   text-align: center;
 
@@ -127,6 +126,7 @@ Item.Number = styled.div`
 `;
 
 Item.Icon = styled.div`
+  margin-top: 20px;
   user-select: none;
   height: 50px;
 
@@ -136,6 +136,8 @@ Item.Icon = styled.div`
 `;
 
 Item.Title = styled.h2`
+  margin-top: 20px;
+  height: 50px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -145,6 +147,7 @@ Item.Title = styled.h2`
 `;
 
 Item.Line = styled.div`
+  margin-top: 5px;
   width: 100px;
   height: 2px;
   background-color: rgba(51, 204, 197, 0.3);
@@ -152,6 +155,7 @@ Item.Line = styled.div`
 `;
 
 Item.Text = styled.p`
+  margin-top: 20px;
   max-width: 230px;
   text-align: center;
   font-family: "Open Sans";

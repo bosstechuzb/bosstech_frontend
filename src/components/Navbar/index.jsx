@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   OuterContainer,
   Container,
@@ -17,9 +17,12 @@ import { toTop } from "./../../resources/toTop";
 import SelectLang from "../SelectLang";
 import burger from "../../assets/icons/hamburger.png";
 import close from "../../assets/icons/close.png";
+import { data_navbar } from "./../../resources/data";
+import { LangContext } from "../../context/lang";
 
 function Navbar() {
   const [opened, setOpened] = useState(false);
+  const [language] = useContext(LangContext);
 
   return (
     <OuterContainer>
@@ -35,14 +38,15 @@ function Navbar() {
         </ForLogo>
         <RightSide>
           <Links>
-            <NavbarLink href="#direction">Direction</NavbarLink>
-            <NavbarLink href="#services">Services</NavbarLink>
-            <NavbarLink href="#portfolio">Portfolio</NavbarLink>
-            <NavbarLink href="#team">Team</NavbarLink>
+            {data_navbar[language]?.links.map(({ name, href }, index) => (
+              <NavbarLink href={href} key={index}>
+                {name}
+              </NavbarLink>
+            ))}
           </Links>
           <Right>
             <SelectLang />
-            <Button href="#contact">Contact</Button>
+            <Button href="#contact">{data_navbar[language]?.button}</Button>
           </Right>
           <Burger onClick={() => setOpened((p) => !p)}>
             <img src={opened ? close : burger} alt="open-close menu" />
@@ -51,21 +55,18 @@ function Navbar() {
       </Container>
       <Menu opened={`${opened}`}>
         <MenuContainer>
-          <NavbarLink onClick={() => setOpened(false)} href="/home#direction">
-            Direction
-          </NavbarLink>
-          <NavbarLink onClick={() => setOpened(false)} href="/home#services">
-            Services
-          </NavbarLink>
-          <NavbarLink onClick={() => setOpened(false)} href="/home#portfolio">
-            Portfolio
-          </NavbarLink>
-          <NavbarLink onClick={() => setOpened(false)} href="/home#team">
-            Team
-          </NavbarLink>
+          {data_navbar[language]?.links.map(({ name, href }, index) => (
+            <NavbarLink
+              onClick={() => setOpened(false)}
+              href={href}
+              key={index}
+            >
+              {name}
+            </NavbarLink>
+          ))}
           <SelectLang />
           <Button onClick={() => setOpened(false)} href="#contact">
-            Contact
+            {data_navbar[language]?.button}
           </Button>
         </MenuContainer>
       </Menu>
@@ -74,3 +75,24 @@ function Navbar() {
 }
 
 export default Navbar;
+
+{
+  /* <NavbarLink href="#direction">Direction</NavbarLink>
+<NavbarLink href="#services">Services</NavbarLink>
+<NavbarLink href="#portfolio">Portfolio</NavbarLink>
+<NavbarLink href="#team">Team</NavbarLink> */
+}
+{
+  /* <NavbarLink onClick={() => setOpened(false)} href="/home#direction">
+  Direction
+</NavbarLink>
+<NavbarLink onClick={() => setOpened(false)} href="/home#services">
+  Services
+</NavbarLink>
+<NavbarLink onClick={() => setOpened(false)} href="/home#portfolio">
+  Portfolio
+</NavbarLink>
+<NavbarLink onClick={() => setOpened(false)} href="/home#team">
+  Team
+</NavbarLink> */
+}

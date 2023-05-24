@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   OuterContainer,
   Img,
@@ -15,9 +15,15 @@ import backgroundImg from "../../assets/images/header/background.svg";
 import rightSideImg from "../../assets/images/header/right-side.svg";
 import { ReactComponent as LogoImg } from "../../assets/images/header/logo.svg";
 import { Fade } from "react-reveal";
-import { TypeAnimation } from "react-type-animation";
+import { LangContext } from "./../../context/lang/index";
+import { data_header } from "../../resources/data";
+import English from "./animation.english";
+import Russian from "./animation.russian";
+import Uzbek from "./animation.uzbek";
 
 function Header() {
+  const [language] = useContext(LangContext);
+
   return (
     <OuterContainer>
       <Img>
@@ -32,32 +38,22 @@ function Header() {
           </Logo>
           <Hr />
           <Fade bottom>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>{data_header[language]?.title}</p>
           </Fade>
           <Fade bottom>
             <Text>
-              <TypeAnimation
-                sequence={[
-                  "IT Consulting",
-                  3000,
-                  "Web Development",
-                  3000,
-                  "Mobile Development",
-                  3000,
-                  "Social Media Marketing",
-                  3000,
-                  "UX/UI Design",
-                  3000,
-                ]}
-                wrapper="span"
-                cursor={true}
-                repeat={Infinity}
-              />
+              {language === "en" ? (
+                <English />
+              ) : language === "ru" ? (
+                <Russian />
+              ) : (
+                <Uzbek />
+              )}
             </Text>
           </Fade>
           <ButtonRow>
             <Fade bottom>
-              <Button href="#contact">Contact</Button>
+              <Button href="#contact">{data_header[language]?.button}</Button>
             </Fade>
           </ButtonRow>
         </LeftSide>
