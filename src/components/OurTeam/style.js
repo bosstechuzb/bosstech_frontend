@@ -146,11 +146,12 @@ Item.ImageContainer = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-`;
+  `;
 
 Item.Image = styled.div`
   aspect-ratio: 1 / 1;
   width: 200px;
+  border-radius: 10px;
   background-image: url(${({ url }) => url});
   background-repeat: no-repeat;
   background-size: contain;

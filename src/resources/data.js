@@ -14,7 +14,7 @@ import ahuse from "../assets/images/portfolio/ahuse.png";
 import dashboard from "../assets/images/portfolio/dashboard.png";
 import rent from "../assets/images/portfolio/rent.png";
 // Our Team
-import member1 from "../assets/images/ourTeam/member-1.png";
+import member1 from "../assets/images/ourTeam/member-1.jpg";
 import member2 from "../assets/images/ourTeam/member-2.png";
 import member3 from "../assets/images/ourTeam/member-3.png";
 import member4 from "../assets/images/ourTeam/member-4.png";
@@ -33,10 +33,6 @@ export const data_navbar = {
   en: {
     links: [
       {
-        name: "Direction",
-        href: "#direction",
-      },
-      {
         name: "Services",
         href: "#services",
       },
@@ -54,10 +50,6 @@ export const data_navbar = {
   uz: {
     links: [
       {
-        name: "Yo'nalish",
-        href: "#direction",
-      },
-      {
         name: "Xizmatlar",
         href: "#services",
       },
@@ -74,10 +66,6 @@ export const data_navbar = {
   },
   ru: {
     links: [
-      {
-        name: "Направление",
-        href: "#direction",
-      },
       {
         name: "Услуги",
         href: "#services",
@@ -97,7 +85,7 @@ export const data_navbar = {
 
 export const data_header = {
   en: {
-    title: "IT Company",
+    title: "Your Trusted IT Solutions Provider",
     specialities: [
       "IT Consulting",
       3000,
@@ -113,7 +101,7 @@ export const data_header = {
     button: "Contact",
   },
   uz: {
-    title: "IT Kompaniya",
+    title: "Sizning ishonchli AT yechimlari ta'minotchingiz",
     specialities: [
       "IT Konsalting",
       3000,
@@ -129,7 +117,7 @@ export const data_header = {
     button: "Aloqa",
   },
   ru: {
-    title: "ИТ Компания",
+    title: "Ваш надежный поставщик ИТ-решений",
     specialities: [
       "ИТ Консалтинг",
       3000,
@@ -149,13 +137,12 @@ export const data_header = {
 export const data_our_services = {
   en: {
     title: "Our Services",
-    description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "",
     items: [
       {
         icon: it,
         title: "IT consulting",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "We offer expert IT consulting services to help businesses leverage technology for maximum efficiency and productivity.",
       },
       {
         icon: mobile,
@@ -187,7 +174,7 @@ export const data_our_services = {
       {
         icon: it,
         title: "IT konsalting",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Biz biznesingizga maksimal samaradorlik va mahsuldorlikka erishish uchun texnologiyadan foydalanishda yordam berish uchun ekspert IT-konsalting xizmatlarini taklif etamiz.",
       },
       {
         icon: mobile,
@@ -219,7 +206,7 @@ export const data_our_services = {
       {
         icon: it,
         title: "ИТ Консалтинг",
-        description: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит,",
+        description: "Мы предлагаем экспертные консультационные услуги в области ИТ, чтобы помочь предприятиям использовать технологии для максимальной эффективности и производительности",
       },
       {
         icon: mobile,
@@ -452,7 +439,7 @@ export const data_our_team = {
     items: [
       {
         image: member1,
-        name: "Yokit Den",
+        name: "Abbosbek Akhmedov",
         position: "CEO",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
       },
@@ -489,7 +476,7 @@ export const data_our_team = {
     items: [
       {
         image: member1,
-        name: "Yokit Den",
+        name: "Abbosbek Akhmedov",
         position: "CEO",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
       },
@@ -526,7 +513,7 @@ export const data_our_team = {
     items: [
       {
         image: member1,
-        name: "Ёкит Ден",
+        name: "Abbosbek Akhmedov",
         position: "Генеральный директор",
         text: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре",
       },

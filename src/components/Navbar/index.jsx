@@ -75,24 +75,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-{
-  /* <NavbarLink href="#direction">Direction</NavbarLink>
-<NavbarLink href="#services">Services</NavbarLink>
-<NavbarLink href="#portfolio">Portfolio</NavbarLink>
-<NavbarLink href="#team">Team</NavbarLink> */
-}
-{
-  /* <NavbarLink onClick={() => setOpened(false)} href="/home#direction">
-  Direction
-</NavbarLink>
-<NavbarLink onClick={() => setOpened(false)} href="/home#services">
-  Services
-</NavbarLink>
-<NavbarLink onClick={() => setOpened(false)} href="/home#portfolio">
-  Portfolio
-</NavbarLink>
-<NavbarLink onClick={() => setOpened(false)} href="/home#team">
-  Team
-</NavbarLink> */
-}

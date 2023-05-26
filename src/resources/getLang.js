@@ -8,7 +8,7 @@ function GetLang() {
     let lang = localStorage.getItem("lang") || "en";
     document.documentElement.lang = lang;
     setLanguage(lang);
-  }, [language]);
+  }, [language, setLanguage]);
 }
 
 export default GetLang;

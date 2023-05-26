@@ -5,15 +5,25 @@ import tel from "../../assets/icons/contact/phone.svg";
 import address from "../../assets/icons/contact/address.svg";
 import { LangContext } from "./../../context/lang/index";
 import { data_contact } from "../../resources/data";
+import axios from "axios";
 
 function Contact() {
   const [language] = useContext(LangContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // var formData = new FormData(e.target);
-    // let obj = Object.fromEntries(formData);
-    // console.log(obj);
+    var formData = new FormData(e.target);
+    let obj = Object.fromEntries(formData);
+    console.log("Form data: ", obj);
+    axios.post(`http://13.230.149.113:8080/api/v1/message`, obj, {
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }).then(res => {
+      console.log("Res: ", res);
+    }).catch(err => {
+      console.log(err);
+    })
   };
 
   return (
@@ -34,7 +44,7 @@ function Contact() {
 
               <input
                 type="text"
-                name="phone_email"
+                name="emailOrPhone"
                 placeholder={data_contact[language]?.input_phone_email}
                 required
               />

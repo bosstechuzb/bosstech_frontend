@@ -75,7 +75,7 @@ function OurTeam() {
                     </Item.ImageContainer>
                     <Item.Name>{item.name}</Item.Name>
                     <Item.Position>{item.position}</Item.Position>
-                    <Item.Text>{item.text}</Item.Text>
+                    {/* <Item.Text>{item.text}</Item.Text> */}
                   </Item>
                 </ItemContainer>
               ))}
