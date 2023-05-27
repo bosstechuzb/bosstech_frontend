@@ -17,8 +17,7 @@ import rent from "../assets/images/portfolio/rent.png";
 import member1 from "../assets/images/ourTeam/member-1.png";
 import member2 from "../assets/images/ourTeam/member-2.png";
 import member3 from "../assets/images/ourTeam/member-3.png";
-import member4 from "../assets/images/ourTeam/member-4.png";
-import member5 from "../assets/images/ourTeam/member-5.png";
+
 // How We Work
 import number1 from "../assets/images/howWeWork/01.svg";
 import number2 from "../assets/images/howWeWork/02.svg";
@@ -351,25 +350,28 @@ export const data_our_portfolio = {
   en: {
     title: "Our Portofolio",
     description: "Discover Our Recent Projects And Showcases",
-    button: "Visit our Linkedin",
+    button: "Visit the project",
     items: [
       {
         image: ahuse,
         title: "WIUT LMS",
+        link: "https://lms.wiut.uz",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+          "Learning Management System at WIUT to deliver materials to students, timetable and assessment",
       },
       {
         image: dashboard,
         title: "Buzzzem",
+        link: "https://buzzzem.net",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+          "Buzzzem is the web application that you can find the blogger to follow, comment and rate bloggers",
       },
       {
         image: rent,
         title: "BOSSBLOG",
+        link: "https://bossblog.uz",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+          "BOSSBLOG is the application that you can write blogs or read the blog about the topic that you are interested in",
       },
     ],
   },
@@ -377,50 +379,56 @@ export const data_our_portfolio = {
     title: "Bizning Portfolio",
     description:
       "Bizning So'nggi Loyihalarimiz Va Ko'rgazmalarimiz Bilan Tanishing",
-    button: "Linkedinga tashrif buyuring",
+    button: "Loyihaga tashrif buyuring",
     items: [
       {
         image: ahuse,
         title: "TXVU LMS",
+        link: "https://lms.wiut.uz",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+          "Talabalarga materiallarni yetkazib berish, dars jadvali va baholash uchun TXVUda ta'limni boshqarish tizimi",
       },
       {
         image: dashboard,
         title: "Buzzzem",
+        link: "https://buzzzem.net",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+          "Buzzzem - bu bloggerni kuzatish, sharhlash va bloggerlarni baholashingiz uchun veb-ilova",
       },
       {
         image: rent,
         title: "BOSSBLOG",
+        link: "https://bossblog.uz",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+          "BOSSBLOG - bu sizni qiziqtirgan mavzuda blog yozishingiz yoki blogni o'qishingiz mumkin bo'lgan ilova",
       },
     ],
   },
   ru: {
     title: "Наше Портфолио",
     description: "Откройте для себя наши последние проекты и презентации",
-    button: "Посетите наш LinkedIn",
+    button: "Посетите проект",
     items: [
       {
         image: ahuse,
         title: "МВУТ ЛМС",
+        link: "https://lms.wiut.uz",
         description:
-          "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит. Суспендиссе вариус эним ин эрос.",
+          "Система управления обучением в WIUT для предоставления материалов студентам, расписания и оценки",
       },
       {
         image: dashboard,
         title: "Buzzzem",
+        link: "https://buzzzem.net",
         description:
-          "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит. Суспендиссе вариус эним ин эрос.",
+          "Buzzzem — это веб-приложение, в котором вы можете найти блоггера, подписаться на него, комментировать и оценивать блогеров.",
       },
       {
         image: rent,
         title: "BOSSBLOG",
+        link: "https://bossblog.uz",
         description:
-          "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит. Суспендиссе вариус эним ин эрос.",
+          "BOSSBLOG - это приложение, в котором вы можете вести блоги или читать блог на интересующую вас тему.",
       },
     ],
   },
@@ -637,10 +645,6 @@ export const data_footer = {
         title: "Useful Link",
         links: [
           { to: "/home", name: "About Us" },
-          { to: "/home#services", name: "About Services" },
-          { to: "/home#portfolio", name: "Portfolio" },
-          { to: "/home#team", name: "Our team" },
-          { to: "/home#contact", name: "Contact Us" },
         ],
       },
       {
@@ -649,17 +653,7 @@ export const data_footer = {
           { to: "https://buzzzem.net", name: "Buzzzem" },
           { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
-      },
-      {
-        title: "Contact Us",
-        links: [
-          { to: "", name: "About Us" },
-          { to: "", name: "About Services" },
-          { to: "", name: "About Departments" },
-          { to: "", name: "Services" },
-          { to: "", name: "Contact Us" },
-        ],
-      },
+      }
     ],
     form: {
       text: "Newsletter",
@@ -673,11 +667,7 @@ export const data_footer = {
       {
         title: "Foydali havola",
         links: [
-          { to: "", name: "Biz haqimizda" },
-          { to: "", name: "Xizmatlar haqida" },
-          { to: "", name: "Bo'limlar haqida" },
-          { to: "", name: "Xizmatlar" },
-          { to: "", name: "Biz bilan bog'lanish" },
+          { to: "/", name: "Biz haqimizda" },
         ],
       },
       {
@@ -686,17 +676,7 @@ export const data_footer = {
           { to: "https://buzzzem.net", name: "Buzzzem" },
           { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
-      },
-      {
-        title: "Biz bilan bog'lanish",
-        links: [
-          { to: "", name: "Biz haqimizda" },
-          { to: "", name: "Xizmatlar haqida" },
-          { to: "", name: "Bo'limlar haqida" },
-          { to: "", name: "Xizmatlar" },
-          { to: "", name: "Biz bilan bog'lanish" },
-        ],
-      },
+      }
     ],
     form: {
       text: "Yangiliklar",
@@ -711,10 +691,6 @@ export const data_footer = {
         title: "Полезная ссылка",
         links: [
           { to: "", name: "О нас" },
-          { to: "", name: "Об услугах" },
-          { to: "", name: "О кафедрах" },
-          { to: "", name: "Услуги" },
-          { to: "", name: "Связаться с нами" },
         ],
       },
       {
@@ -723,17 +699,7 @@ export const data_footer = {
           { to: "https://buzzzem.net", name: "Buzzzem" },
           { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
-      },
-      {
-        title: "Связаться с нами",
-        links: [
-          { to: "", name: "О нас" },
-          { to: "", name: "Об услугах" },
-          { to: "", name: "О кафедрах" },
-          { to: "", name: "Услуги" },
-          { to: "", name: "Связаться с нами" },
-        ],
-      },
+      }
     ],
     form: {
       text: "Новостная рассылка",

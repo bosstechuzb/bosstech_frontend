@@ -239,16 +239,19 @@ export const Links = styled.div`
   display: flex;
   gap: 50px;
   justify-content: space-between;
-
+  
   @media screen and (max-width: 768px) {
     gap: 25px;
   }
-
+  
   @media screen and (max-width: 576px) {
     margin-top: 25px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    width: 50%;
   }
 `;
 
@@ -262,7 +265,7 @@ LinkColumn.Title = styled.div`
   margin-bottom: 15px;
 
   span {
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -284,6 +287,7 @@ LinkColumn.Link = styled(Link)`
 `;
 
 export const Row = styled.div`
+
   margin-top: 75px;
   display: flex;
   align-items: center;

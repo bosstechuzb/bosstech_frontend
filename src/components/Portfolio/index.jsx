@@ -51,7 +51,7 @@ function Portfolio() {
                   </CardFooter.Description>
                   <div>
                     <CardFooter.Link
-                      href="https://linkedin.com"
+                      href={item.link}
                       target="_blank"
                     >
                       {data_our_portfolio[language]?.button} <Arrow />

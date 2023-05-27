@@ -6,25 +6,44 @@ import address from "../../assets/icons/contact/address.svg";
 import { LangContext } from "./../../context/lang/index";
 import { data_contact } from "../../resources/data";
 import axios from "axios";
+import { useState } from "react";
 
 function Contact() {
   const [language] = useContext(LangContext);
+  const [name, setName] = useState("")
+  const [emailOrPhone, setEmailOrPhone] = useState("")
+  const [message, setMessage] = useState("")
+  
+  function reset() {
+    setName("")
+    setEmailOrPhone("")
+    setMessage("")
+  }
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    var formData = new FormData(e.target);
-    let obj = Object.fromEntries(formData);
+    const obj = {
+      name,
+      emailOrPhone,
+      message
+    }
     console.log("Form data: ", obj);
+    reset()
     axios.post(`https://api.chatuziouz.ml/api/v1/message`, obj, {
       headers: {
         "Content-Type": "application/json"
       }
     }).then(res => {
       console.log("Res: ", res);
+      reset()
+      alert("Successfully sent!")
     }).catch(err => {
       console.log(err);
+      alert("Something went wrong, please try again later!")
     })
   };
+
 
   return (
     <OuterContainer id="contact">
@@ -34,28 +53,34 @@ function Contact() {
               <input
                 type="text"
                 name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder={data_contact[language]?.input_name}
                 minLength={2}
                 maxLength={100}
-                pattern="[A-Za-z\s]+"
                 title="Please include only letters"
                 required
               />
 
               <input
                 type="text"
+                value={emailOrPhone}
                 name="emailOrPhone"
+                onChange={(e) => setEmailOrPhone(e.target.value)}
                 placeholder={data_contact[language]?.input_phone_email}
                 required
               />
               <textarea
                 placeholder={data_contact[language]?.input_message}
                 name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 rows={8}
                 required
               ></textarea>
               <div>
-                <button type="submit">{data_contact[language]?.button}</button>
+                <button 
+                  type="submit" id="liveToastBtn">{data_contact[language]?.button}</button>
               </div>
             </Box.LeftSide>
             <Box.RightSide>

@@ -9,7 +9,6 @@ import {
   OuterContainer,
   Row,
   RowLeftSide,
-  RowRightSide,
 } from "./style";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 import { toTop } from "./../../resources/toTop";
@@ -59,28 +58,14 @@ function Footer() {
               <RowLeftSide.Link href="https://twitter.com" target="_blank">
                 <Twitter />
               </RowLeftSide.Link>
-              <RowLeftSide.Link href="https://linkedin.com" target="_blank">
+              <RowLeftSide.Link href="https://www.linkedin.com/company/bosstech-uz/" target="_blank">
                 <Linkedin />
               </RowLeftSide.Link>
-              <RowLeftSide.Link href="https://instagram.com" target="_blank">
+              <RowLeftSide.Link href="https://instagram.com/bosstech.io" target="_blank">
                 <Instagram />
               </RowLeftSide.Link>
             </Fade>
           </RowLeftSide>
-          <RowRightSide>
-            <Fade right>
-              <RowRightSide.Text>
-                {data_footer[language]?.form.text}
-              </RowRightSide.Text>
-              <RowRightSide.Form onSubmit={(e) => e.preventDefault()}>
-                <input
-                  type="text"
-                  placeholder={data_footer[language]?.form.input}
-                />
-                <button>{data_footer[language]?.form.button}</button>
-              </RowRightSide.Form>
-            </Fade>
-          </RowRightSide>
         </Row>
         <Bottom>
           <Bottom.Hr>
