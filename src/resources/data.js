@@ -98,7 +98,7 @@ export const data_header = {
       "UX/UI Design",
       3000,
     ],
-    button: "Contact",
+    button: "Contact us",
   },
   uz: {
     title: "Sizning ishonchli AT yechimlari ta'minotchingiz",
@@ -114,7 +114,7 @@ export const data_header = {
       "UX/UI Dizayn",
       3000,
     ],
-    button: "Aloqa",
+    button: "Biz bilan bo'glanish",
   },
   ru: {
     title: "Ваш надежный поставщик ИТ-решений",
@@ -130,7 +130,7 @@ export const data_header = {
       "UX/UI Дизайн",
       3000,
     ],
-    button: "Контакт",
+    button: "Связаться с нами",
   },
 };
 
@@ -142,91 +142,89 @@ export const data_our_services = {
       {
         icon: it,
         title: "IT consulting",
-        description: "We offer expert IT consulting services to help businesses leverage technology for maximum efficiency and productivity.",
+        description: "Driving growth and efficiency with comprehensive IT consulting services.",
       },
       {
         icon: mobile,
         title: "Mobile Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Crafting innovative mobile apps that captivate audiences.",
       },
       {
         icon: web,
         title: "Web Development",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Empowering your online presence with dynamic web development services.",
       },
       {
         icon: social,
         title: "Social Media Marketing",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Unlocking the potential of social media through strategic marketing.",
       },
       {
         icon: design,
         title: "UX|UI Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Designing visually stunning interfaces for enhanced user engagement.",
       },
     ],
   },
   uz: {
     title: "Bizning xizmatlar",
-    description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "",
     items: [
       {
         icon: it,
         title: "IT konsalting",
-        description: "Biz biznesingizga maksimal samaradorlik va mahsuldorlikka erishish uchun texnologiyadan foydalanishda yordam berish uchun ekspert IT-konsalting xizmatlarini taklif etamiz.",
+        description: "Keng qamrovli IT konsalting xizmatlari bilan o'sish va samaradorlikni oshirish.",
       },
       {
         icon: mobile,
         title: "Mobil ilovalar",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Foydalanuvchilarni o'ziga jalb qiladigan innovatsion mobil ilovalarni yaratish.",
       },
       {
         icon: web,
         title: "Web saytlar",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Dinamik vebsaytlarni ishlab chiqish xizmatlari bilan onlayn mavjudligingizni kuchaytirish.",
       },
       {
         icon: social,
         title: "Ijtimoiy tarmoq marketingi",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Strategik marketing orqali ijtimoiy media imkoniyatlarini ochish.",
       },
       {
         icon: design,
         title: "UX|UI Dizayn",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+        description: "Kengaytirilgan foydalanuvchi ishtiroki uchun vizual ajoyib interfeyslarni loyihalash.",
       },
     ],
   },
   ru: {
     title: "Наши услуги",
-    description:
-      "cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре магна алиқуа.",
+    description:"",
     items: [
       {
         icon: it,
         title: "ИТ Консалтинг",
-        description: "Мы предлагаем экспертные консультационные услуги в области ИТ, чтобы помочь предприятиям использовать технологии для максимальной эффективности и производительности",
+        description: "Обеспечение роста и эффективности с помощью комплексных консультационных услуг в области ИТ.",
       },
       {
         icon: mobile,
-        title: "Веб Разработка",
-        description: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит,",
+        title: "Мобильная Разработка",
+        description: "Создание инновационных мобильных приложений, которые привлекают аудиторию.",
       },
       {
         icon: web,
-        title: "Мобильная Разработка",
-        description: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит,",
+        title: "Веб Разработка",
+        description: "Расширение возможностей вашего присутствия в Интернете с помощью динамических услуг веб-разработки.",
       },
       {
         icon: social,
         title: "Маркетинг в области СМИ",
-        description: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит,",
+        description: "Раскрытие потенциала социальных сетей с помощью стратегического маркетинга.",
       },
       {
         icon: design,
         title: "UX/UI Дизайн",
-        description: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит,",
+        description: "Разработка визуально ошеломляющих интерфейсов для повышения вовлеченности пользователей.",
       },
     ],
   },

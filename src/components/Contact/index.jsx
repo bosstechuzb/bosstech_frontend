@@ -15,7 +15,7 @@ function Contact() {
     var formData = new FormData(e.target);
     let obj = Object.fromEntries(formData);
     console.log("Form data: ", obj);
-    axios.post(`http://13.230.149.113:8080/api/v1/message`, obj, {
+    axios.post(`https://api.chatuziouz.ml/api/v1/message`, obj, {
       headers: {
         "Content-Type": "application/json"
       }

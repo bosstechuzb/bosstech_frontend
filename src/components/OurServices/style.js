@@ -16,7 +16,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -42,7 +42,7 @@ export const Description = styled.p`
   margin-top: 10px;
   max-width: 600px;
   text-align: center;
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -98,7 +98,7 @@ export const Item = styled.div`
   }
 
   p {
-    font-family: "Poppins";
+    /* font-family: "Poppins"; */
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
