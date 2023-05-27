@@ -35,7 +35,6 @@ function Contact() {
         "Content-Type": "application/json"
       }
     }).then(res => {
-      console.log("Res: ", res);
       reset()
       alert("Successfully sent!")
     }).catch(err => {
