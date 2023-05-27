@@ -27,7 +27,7 @@ export const Title = styled.h1`
 export const Description = styled.p`
   margin-block: 10px 40px;
   max-width: 600px;
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

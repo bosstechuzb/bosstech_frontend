@@ -34,7 +34,7 @@ function Portfolio() {
             </Fade>
           </LeftSide>
           <Fade bottom>
-            <Visit href="https://linkedin.com" target="_blank">
+            <Visit href="https://www.linkedin.com/company/bosstech-uz/" target="_blank">
               <Linkedin /> {data_our_portfolio[language]?.button}
             </Visit>
           </Fade>

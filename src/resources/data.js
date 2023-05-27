@@ -14,7 +14,7 @@ import ahuse from "../assets/images/portfolio/ahuse.png";
 import dashboard from "../assets/images/portfolio/dashboard.png";
 import rent from "../assets/images/portfolio/rent.png";
 // Our Team
-import member1 from "../assets/images/ourTeam/member-1.jpg";
+import member1 from "../assets/images/ourTeam/member-1.png";
 import member2 from "../assets/images/ourTeam/member-2.png";
 import member3 from "../assets/images/ourTeam/member-3.png";
 import member4 from "../assets/images/ourTeam/member-4.png";
@@ -232,36 +232,36 @@ export const data_our_services = {
 
 export const data_seo_solution = {
   en: {
-    title: "The best SEO solution",
+    title: "The Best SEO Solution",
     description:
-      "Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet",
+      "Discover the ultimate SEO solution that delivers outstanding results. Our expert team utilizes cutting-edge strategies and industry best practices to propel your website to the top of search engine rankings. Boost your online visibility, drive targeted traffic, and increase conversions with our comprehensive SEO services.Stay ahead of the competition and dominate the digital landscape with our proven track record of delivering the best SEO results.",
     items: [
-      "Award Winning",
-      "24/7 Support",
-      "Professional Staff",
-      "Fair Prices",
+      "Drive targeted traffic",
+      "Boost your online visibility",
+      "Content strategy",
+      "Keyword research",
     ],
   },
   uz: {
     title: "Eng yaxshi SEO yechimi",
     description:
-      "Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet",
+      "Ajoyib natijalarni beruvchi yakuniy SEO yechimini kashf eting. Mutaxassislar jamoasi veb-saytingizni qidiruv tizimining yuqori pog'onasiga ko'tarish uchun ilg'or strategiyalar va sanoatning eng yaxshi amaliyotlaridan foydalanadi. Bizning keng qamrovli SEO xizmatlarimiz yordamida onlayn ko'rinishingizni oshiring, maqsadli trafikni oshiring va konversiyalarni oshiring. Raqobatdan oldinda turing va eng yaxshi SEO natijalarini taqdim etish bo'yicha tasdiqlangan tajribamiz bilan raqamli landshaftda hukmronlik qiling.",
     items: [
-      "Mukofot Sovrindori",
-      "24/7 Qo'llab-quvvatlash",
-      "Professional Xodimlar",
-      "Adolatli Narxlar",
+      "Maqsadli trafikni boshqarish",
+      "Onlayn ko'rinishingizni oshiring",
+      "Kontent strategiyasi",
+      "Kalit so'zlarni o'rganish",
     ],
   },
   ru: {
     title: "Лучшее SEO-решение",
     description:
-      "Темпор эрат элитр ребум ат cлита. Диам долор диам ипсум эт темпор сит. Алиқу диам амет диам эт эос лаборе. Cлита эрат ипсум эт лорем эт сит, сед стет но лаборе лорем сит. Санcтус cлита дуо жусто эт темпор эирмод магна долоре эрат амет",
+      "Откройте для себя идеальное SEO-решение, которое обеспечивает выдающиеся результаты. Наша команда экспертов использует передовые стратегии и лучшие отраслевые практики, чтобы вывести ваш веб-сайт на вершину рейтинга поисковых систем. Повысьте свою видимость в Интернете, привлеките целевой трафик и увеличьте количество конверсий с помощью наших комплексных услуг SEO. Будьте впереди конкурентов и доминируйте в цифровом ландшафте благодаря нашему проверенному опыту предоставления наилучших результатов SEO.",
     items: [
-      "Удостоенный Наград",
-      "Круглосуточная Поддержка",
-      "Профессиональный Персонал",
-      "Справедливые Цены",
+      "Привлекайте целевой трафик",
+      "Повысьте свою видимость в Интернете",
+      "Контент-стратегия",
+      "Исследование ключевых слов",
     ],
   },
 };
@@ -269,8 +269,7 @@ export const data_seo_solution = {
 export const data_why_choose_us = {
   en: {
     title: "Why Choose Us",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis",
+    description: "Experience exceptional IT solutions and unrivaled expertise for your digital transformation.",
     items: [
       {
         icon: satisfied,
@@ -279,25 +278,24 @@ export const data_why_choose_us = {
       },
       {
         icon: planning,
-        number: "4700+",
+        number: "50+",
         text: "AWESOME planning",
       },
       {
         icon: clients,
-        number: "4500+",
+        number: "5+",
         text: "CLIENTS",
       },
       {
         icon: business,
-        number: "19000+",
-        text: "DAILY business",
+        number: "10+",
+        text: "Projects",
       },
     ],
   },
   uz: {
     title: "Nima Uchun Bizni Tanlaysiz",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua. Ut enim ad minim veniam, quis",
+    description: "Raqamli transformatsiyangiz uchun ajoyib IT yechimlari va tengsiz tajribadan foydalaning.",
     items: [
       {
         icon: satisfied,
@@ -306,25 +304,24 @@ export const data_why_choose_us = {
       },
       {
         icon: planning,
-        number: "4700+",
+        number: "50+",
         text: "AJOYIB Rejalashtirish",
       },
       {
         icon: clients,
-        number: "4500+",
+        number: "5+",
         text: "MIJOZLAR",
       },
       {
         icon: business,
-        number: "19000+",
-        text: "KUNDALIK biznes",
+        number: "10+",
+        text: "Loyihalar",
       },
     ],
   },
   ru: {
     title: "Почему Выбрали Нас",
-    description:
-      "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоремагна алиқуа. Ут эним ад миним вениам, қуис",
+    description: "Воспользуйтесь исключительными ИТ-решениями и непревзойденным опытом для цифровой трансформации.",
     items: [
       {
         icon: satisfied,
@@ -333,18 +330,18 @@ export const data_why_choose_us = {
       },
       {
         icon: planning,
-        number: "4700+",
+        number: "50+",
         text: "ПОТРЯСАЮЩЕЕ планирование",
       },
       {
         icon: clients,
-        number: "4500+",
+        number: "5+",
         text: "КЛИЕНТЫ",
       },
       {
         icon: business,
-        number: "19000+",
-        text: "ЕЖЕДНЕВНЫЙ бизнес",
+        number: "10+",
+        text: "Проекты",
       },
     ],
   },
@@ -358,19 +355,19 @@ export const data_our_portfolio = {
     items: [
       {
         image: ahuse,
-        title: "Ahuse",
+        title: "WIUT LMS",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       },
       {
         image: dashboard,
-        title: "App Dashboard",
+        title: "Buzzzem",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       },
       {
         image: rent,
-        title: "Easy Rent",
+        title: "BOSSBLOG",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       },
@@ -384,19 +381,19 @@ export const data_our_portfolio = {
     items: [
       {
         image: ahuse,
-        title: "Ahuse",
+        title: "TXVU LMS",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       },
       {
         image: dashboard,
-        title: "App Dashboard",
+        title: "Buzzzem",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       },
       {
         image: rent,
-        title: "Easy Rent",
+        title: "BOSSBLOG",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       },
@@ -409,19 +406,19 @@ export const data_our_portfolio = {
     items: [
       {
         image: ahuse,
-        title: "Ahuse",
+        title: "МВУТ ЛМС",
         description:
           "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит. Суспендиссе вариус эним ин эрос.",
       },
       {
         image: dashboard,
-        title: "App Dashboard",
+        title: "Buzzzem",
         description:
           "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит. Суспендиссе вариус эним ин эрос.",
       },
       {
         image: rent,
-        title: "Easy Rent",
+        title: "BOSSBLOG",
         description:
           "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит. Суспендиссе вариус эним ин эрос.",
       },
@@ -433,7 +430,7 @@ export const data_our_team = {
   en: {
     title: "Our Team",
     description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Our diverse team of experts brings together talent, passion, and innovation to drive your success.",
     items: [
       {
         image: member1,
@@ -443,34 +440,22 @@ export const data_our_team = {
       },
       {
         image: member2,
-        name: "Yokit Den",
-        position: "Web developer",
+        name: "Jakhongir Ruzmatov",
+        position: "Mobile Developer",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
       },
       {
         image: member3,
-        name: "Yokit Den",
+        name: "Said Azimkhon",
         position: "UX|UI Designer",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-      },
-      {
-        image: member4,
-        name: "Yokit Den",
-        position: "Android developer",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-      },
-      {
-        image: member5,
-        name: "Yokit Den",
-        position: "Front end developer",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-      },
+      }
     ],
   },
   uz: {
     title: "Bizning jamoa",
     description:
-      "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Bizning turli xil mutaxassislar jamoasi sizning muvaffaqiyatingizga erishish uchun iste'dod, ishtiyoq va innovatsiyalarni birlashtiradi.",
     items: [
       {
         image: member1,
@@ -480,65 +465,41 @@ export const data_our_team = {
       },
       {
         image: member2,
-        name: "Yokit Den",
-        position: "Veb dasturchi",
+        name: "Jahongir Ruzmatov",
+        position: "Mobil dasturchi",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
       },
       {
         image: member3,
-        name: "Yokit Den",
+        name: "Said Azimxon",
         position: "UX|UI Dizayner",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-      },
-      {
-        image: member4,
-        name: "Yokit Den",
-        position: "Android dasturchi",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-      },
-      {
-        image: member5,
-        name: "Yokit Den",
-        position: "Front end dasturchi",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-      },
+      }
     ],
   },
   ru: {
     title: "Наша команда",
     description:
-      "cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре магна алиқуа.",
+      "Наша разнообразная команда экспертов объединяет талант, страсть и инновации для достижения вашего успеха.",
     items: [
       {
         image: member1,
-        name: "Abbosbek Akhmedov",
+        name: "Aббосбек Ахмедов",
         position: "Генеральный директор",
         text: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре",
       },
       {
         image: member2,
-        name: "Ёкит Ден",
-        position: "Веб разработчик",
+        name: "Жахонгир Рузматов",
+        position: "Мобильный разработчик",
         text: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре",
       },
       {
         image: member3,
-        name: "Ёкит Ден",
+        name: "Саид Азимхан",
         position: "UX|UI Дизайнер",
         text: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре",
-      },
-      {
-        image: member4,
-        name: "Ёкит Ден",
-        position: "Android Разработчик",
-        text: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре",
-      },
-      {
-        image: member5,
-        name: "Ёкит Ден",
-        position: "Фронтенд Разработчик",
-        text: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре",
-      },
+      }
     ],
   },
 };
@@ -547,93 +508,93 @@ export const data_how_we_work = {
   en: {
     title: "How we work!",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Egestas pellentesque et sem neque. Habitant nec tincidunt egestas pharetra massa nunc. Sem iaculis vulputate viverra nibh commodo sit. Euismod tristique ornare quis dolor urna magna in.",
+      "We work closely with you, understanding your goals and leveraging our expertise to deliver tailored solutions",
     items: [
       {
         number: number1,
         icon: icon1,
         title: "Reach Out",
-        text: "This HTML5 template is based on Bootstrap CSS. You are free to customize anything.",
+        text: "Ready to take your business to the next level? Contact us today and let's start the conversation",
       },
       {
         number: number2,
         icon: icon2,
         title: "Develop a Strategy",
-        text: "Lorem ipsum dolor sit ameter consectetur adipiscing li elit sed do eiusmod.",
+        text: "Our team will analyze your business, identify opportunities, and develop a winning strategy for your digital success.",
       },
       {
         number: number3,
         icon: icon3,
         title: "Implementation",
-        text: "If this template is useful for your website, please consider to support us a little.",
+        text: "We bring your vision to life through seamless implementation, ensuring efficient execution and optimal results.",
       },
       {
         number: number4,
         icon: icon4,
         title: "Analyze the result",
-        text: "Below circular progress bar animation supports those CSS values 10, 20, 30, till 100.",
+        text: "We analyze data and measure outcomes to provide valuable insights that drive continuous improvement and success.",
       },
     ],
   },
   uz: {
     title: "Biz qanday ishlaymiz!",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Egestas pellentesque et sem neque. Habitant nec tincidunt egestas pharetra massa nunc. Sem iaculis vulputate viverra nibh commodo sit. Euismod tristique ornare quis dolor urna magna in.",
+      "Biz siz bilan yaqindan ishlaymiz, maqsadlaringizni tushunamiz va moslashtirilgan yechimlarni taqdim etish uchun tajribamizdan foydalanamiz",
     items: [
       {
         number: number1,
         icon: icon1,
-        title: "Uzatmoq",
-        text: "Ushbu HTML5 shabloni Bootstrap CSS-ga asoslangan. Siz har qanday narsani sozlashingiz mumkin.",
+        title: "Murojaat",
+        text: "Biznesingizni keyingi bosqichga olib chiqishga tayyormisiz? Bugun biz bilan bog'laning va suhbatni boshlaylik",
       },
       {
         number: number2,
         icon: icon2,
         title: "Strategiyani ishlab chiqish",
-        text: "Lorem ipsum dolor sit ameter consectetur adipiscing li elit sed do eiusmod.",
+        text: "Bizning jamoamiz biznesingizni tahlil qiladi, imkoniyatlarni aniqlaydi va raqamli muvaffaqiyatingiz uchun g'alaba qozonish strategiyasini ishlab chiqadi.",
       },
       {
         number: number3,
         icon: icon3,
         title: "Amalga oshirish",
-        text: "Agar ushbu shablon veb-saytingiz uchun foydali bo'lsa, iltimos, bizni biroz qo'llab-quvvatlang.",
+        text: "Biz sizning tasavvuringizni uzluksiz amalga oshirish orqali amalga oshiramiz, samarali bajarilishini va optimal natijalarni ta'minlaymiz.",
       },
       {
         number: number4,
         icon: icon4,
         title: "Natijani tahlil qiling",
-        text: "Quyida aylanma harakatlanish paneli animatsiyasi 10, 20, 30 va 100 gacha bo'lgan CSS qiymatlarini qo'llab-quvvatlaydi.",
+        text: "Biz doimiy takomillashtirish va muvaffaqiyatga olib keladigan qimmatli tushunchalarni taqdim etish uchun ma'lumotlarni tahlil qilamiz va natijalarni o'lchaymiz.",
       },
     ],
   },
   ru: {
     title: "Как мы работаем!",
     description:
-      "Лорем ипсум долор сит амет cонсеcтетур. Эгестас пеллентесқуе эт сем неқуе. Ҳабитант неc тинcидунт эгестас пҳаретра масса нунc. Сем иаcулис вулпутате виверра нибҳ cоммодо сит. Эуисмод тристиқуе орнаре қуис долор урна магна ин.",
+      "Мы тесно сотрудничаем с вами, понимая ваши цели и используя наш опыт для предоставления индивидуальных решений.",
     items: [
       {
         number: number1,
         icon: icon1,
         title: "Протянуть руку",
-        text: "Этот шаблон HTML5 основан на Bootstrap CSS. Вы можете настроить что угодно.",
+        text: "Готовы вывести свой бизнес на новый уровень? Свяжитесь с нами сегодня и давайте начнем разговор",
       },
       {
         number: number2,
         icon: icon2,
         title: "Разработать стратегию",
-        text: "Лорем ипсум долор сит аметер cонсеcтетур адиписcинг ли элит сед до эиусмод.",
+        text: "Наша команда проанализирует ваш бизнес, определит возможности и разработает выигрышную стратегию для вашего цифрового успеха.",
       },
       {
         number: number3,
         icon: icon3,
         title: "Выполнение",
-        text: "Если этот шаблон полезен для вашего веб-сайта, пожалуйста, поддержите нас немного.",
+        text: "Мы воплощаем ваше видение в жизнь посредством беспрепятственного внедрения, обеспечивая эффективное исполнение и оптимальные результаты.",
       },
       {
         number: number4,
         icon: icon4,
         title: "Проанализируйте результат",
-        text: "Круговая анимация индикатора выполнения ниже поддерживает значения CSS от 10, 20, 30 до 100.",
+        text: "Мы анализируем данные и измеряем результаты, чтобы предоставить ценную информацию, которая способствует постоянному совершенствованию и успеху.",
       },
     ],
   },
@@ -644,28 +605,28 @@ export const data_contact = {
     input_name: "Name",
     input_phone_email: "Email or phone number",
     input_message: "Message",
-    button: "SEND",
-    email: "mail@domain.com",
-    phone: "+001-002-0034",
-    address: "26th Street, Digital Villa",
+    button: "Send",
+    email: "bosstechuzb@gmail.com",
+    phone: "+998 91 798 36 06",
+    address: "1A Yangizamon Street, Mirabod, Tashkent",
   },
   uz: {
     input_name: "Ism",
     input_phone_email: "Email yoki telefon raqam",
     input_message: "Xabar",
-    button: "YUBORISH",
-    email: "mail@domain.com",
-    phone: "+001-002-0034",
-    address: "26-ko'cha, Digital Villa",
+    button: "Yuborish",
+    email: "bosstechuzb@gmail.com",
+    phone: "+998 91 798 36 06",
+    address: "Toshkent shahar, Mirabod tumani, Yangizamon ko'chasi 1A",
   },
   ru: {
     input_name: "Имя",
     input_phone_email: "Email или номер телефона",
     input_message: "Сообщение",
-    button: "ОТПРАВЛЯТЬ",
-    email: "mail@domain.com",
-    phone: "+001-002-0034",
-    address: "26-я улица, Digital Villa",
+    button: "Отправить",
+    email: "bosstechuzb@gmail.com",
+    phone: "+998 91 798 36 06",
+    address: "г. Ташкент, Мирабадский район, улица Янгизамон 1А",
   },
 };
 
@@ -675,21 +636,18 @@ export const data_footer = {
       {
         title: "Useful Link",
         links: [
-          { to: "", name: "About Us" },
-          { to: "", name: "About Services" },
-          { to: "", name: "About Departments" },
-          { to: "", name: "Services" },
-          { to: "", name: "Contact Us" },
+          { to: "/home", name: "About Us" },
+          { to: "/home#services", name: "About Services" },
+          { to: "/home#portfolio", name: "Portfolio" },
+          { to: "/home#team", name: "Our team" },
+          { to: "/home#contact", name: "Contact Us" },
         ],
       },
       {
-        title: "The Services",
+        title: "The Projects",
         links: [
-          { to: "", name: "About Us" },
-          { to: "", name: "About Services" },
-          { to: "", name: "About Departments" },
-          { to: "", name: "Services" },
-          { to: "", name: "Contact Us" },
+          { to: "https://buzzzem.net", name: "Buzzzem" },
+          { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
       },
       {
@@ -723,13 +681,10 @@ export const data_footer = {
         ],
       },
       {
-        title: "Xizmatlar",
+        title: "Loyihalar",
         links: [
-          { to: "", name: "Biz haqimizda" },
-          { to: "", name: "Xizmatlar haqida" },
-          { to: "", name: "Bo'limlar haqida" },
-          { to: "", name: "Xizmatlar" },
-          { to: "", name: "Biz bilan bog'lanish" },
+          { to: "https://buzzzem.net", name: "Buzzzem" },
+          { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
       },
       {
@@ -763,13 +718,10 @@ export const data_footer = {
         ],
       },
       {
-        title: "Услуги",
+        title: "Проэкты",
         links: [
-          { to: "", name: "О нас" },
-          { to: "", name: "Об услугах" },
-          { to: "", name: "О кафедрах" },
-          { to: "", name: "Услуги" },
-          { to: "", name: "Связаться с нами" },
+          { to: "https://buzzzem.net", name: "Buzzzem" },
+          { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
       },
       {

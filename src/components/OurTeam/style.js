@@ -52,7 +52,7 @@ export const Title = styled.h1`
 export const Description = styled.p`
   max-width: 600px;
   margin-top: 26px;
-  font-family: "Poppins";
+  /* font-family: "Poppins"; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -160,7 +160,6 @@ Item.Image = styled.div`
 
 Item.Name = styled.h3`
   margin-top: 8px;
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
