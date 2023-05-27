@@ -15,76 +15,80 @@ function Contact() {
     var formData = new FormData(e.target);
     let obj = Object.fromEntries(formData);
     console.log("Form data: ", obj);
-    axios.post(`https://api.chatuziouz.ml/api/v1/message`, obj, {
-      headers: {
-        "Content-Type": "application/json"
-      }
-    }).then(res => {
-      console.log("Res: ", res);
-    }).catch(err => {
-      console.log(err);
-    })
+    axios
+      .post(`https://api.chatuziouz.ml/api/v1/message`, obj, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((res) => {
+        console.log("Res: ", res);
+        e.target.reset();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
     <OuterContainer id="contact">
       <Container>
-          <Box>
-            <Box.LeftSide onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="name"
-                placeholder={data_contact[language]?.input_name}
-                minLength={2}
-                maxLength={100}
-                pattern="[A-Za-z\s]+"
-                title="Please include only letters"
-                required
-              />
+        <Box>
+          <Box.LeftSide onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder={data_contact[language]?.input_name}
+              minLength={2}
+              maxLength={100}
+              pattern="[A-Za-z\s]+"
+              title="Please include only letters"
+              required
+            />
 
-              <input
-                type="text"
-                name="emailOrPhone"
-                placeholder={data_contact[language]?.input_phone_email}
-                required
-              />
-              <textarea
-                placeholder={data_contact[language]?.input_message}
-                name="message"
-                rows={8}
-                required
-              ></textarea>
-              <div>
-                <button type="submit">{data_contact[language]?.button}</button>
-              </div>
-            </Box.LeftSide>
-            <Box.RightSide>
-              <RightSideItem>
-                <img src={mail} alt="email" />
-                <a
-                  href={`mailto:${data_contact[language]?.email}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {data_contact[language]?.email}
-                </a>
-              </RightSideItem>
-              <RightSideItem>
-                <img src={tel} alt="phone number" />
-                <a
-                  href={`tel:${data_contact[language]?.phone}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {data_contact[language]?.phone}
-                </a>
-              </RightSideItem>
-              <RightSideItem>
-                <img src={address} alt="address" />
-                <p>{data_contact[language]?.address}</p>
-              </RightSideItem>
-            </Box.RightSide>
-          </Box>
+            <input
+              type="text"
+              name="emailOrPhone"
+              placeholder={data_contact[language]?.input_phone_email}
+              required
+            />
+            <textarea
+              placeholder={data_contact[language]?.input_message}
+              name="message"
+              rows={8}
+              required
+            ></textarea>
+            <div>
+              <button type="submit">{data_contact[language]?.button}</button>
+            </div>
+          </Box.LeftSide>
+          <Box.RightSide>
+            <RightSideItem>
+              <img src={mail} alt="email" />
+              <a
+                href={`mailto:${data_contact[language]?.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data_contact[language]?.email}
+              </a>
+            </RightSideItem>
+            <RightSideItem>
+              <img src={tel} alt="phone number" />
+              <a
+                href={`tel:${data_contact[language]?.phone}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {data_contact[language]?.phone}
+              </a>
+            </RightSideItem>
+            <RightSideItem>
+              <img src={address} alt="address" />
+              <p>{data_contact[language]?.address}</p>
+            </RightSideItem>
+          </Box.RightSide>
+        </Box>
       </Container>
     </OuterContainer>
   );
