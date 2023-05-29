@@ -31,7 +31,7 @@ function OurTeam() {
     speed: 400,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
       {
