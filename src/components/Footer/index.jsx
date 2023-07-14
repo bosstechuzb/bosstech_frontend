@@ -11,7 +11,7 @@ import {
   RowLeftSide,
 } from "./style";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
-import { toTop } from "./../../resources/toTop";
+import { toTop } from "./../../utils/toTop";
 import { ReactComponent as Facebook } from "../../assets/icons/footer/facebook.svg";
 import { ReactComponent as Twitter } from "../../assets/icons/footer/twitter.svg";
 import { ReactComponent as Linkedin } from "../../assets/icons/footer/linkedin-in.svg";
