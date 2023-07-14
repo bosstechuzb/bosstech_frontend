@@ -3,7 +3,7 @@ import Helmet from "./helmet";
 import { GlobalStyles } from "./style";
 import Home from "./../pages/Home";
 import { Navigate, Route, Routes } from "react-router-dom";
-import GetLang from "../resources/getLang.js";
+import GetLang from "../utils/getLang.js";
 import ToTopButton from "../components/ToTopButton";
 
 const Root = () => {

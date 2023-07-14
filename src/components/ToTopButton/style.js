@@ -1,7 +1,9 @@
 import styled, { css } from "styled-components";
 
 export const BackToTopButton = styled.button`
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1b5bf7;
   width: 40px;
   height: 40px;

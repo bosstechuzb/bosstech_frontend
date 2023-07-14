@@ -17,8 +17,8 @@ import { ReactComponent as Twitter } from "../../assets/icons/footer/twitter.svg
 import { ReactComponent as Linkedin } from "../../assets/icons/footer/linkedin-in.svg";
 import { ReactComponent as Instagram } from "../../assets/icons/footer/instagram.svg";
 import { Fade } from "react-reveal";
-import { LangContext } from "./../../context/lang/index";
-import { data_footer } from "../../resources/data";
+import { LangContext } from "./../../context/lang";
+import { data_footer } from "../../utils/data";
 
 function Footer() {
   const [language] = useContext(LangContext);
@@ -58,10 +58,16 @@ function Footer() {
               <RowLeftSide.Link href="https://twitter.com" target="_blank">
                 <Twitter />
               </RowLeftSide.Link>
-              <RowLeftSide.Link href="https://www.linkedin.com/company/bosstech-uz/" target="_blank">
+              <RowLeftSide.Link
+                href="https://www.linkedin.com/company/bosstech-uz/"
+                target="_blank"
+              >
                 <Linkedin />
               </RowLeftSide.Link>
-              <RowLeftSide.Link href="https://instagram.com/bosstech.io" target="_blank">
+              <RowLeftSide.Link
+                href="https://instagram.com/bosstech.io"
+                target="_blank"
+              >
                 <Instagram />
               </RowLeftSide.Link>
             </Fade>

@@ -13,11 +13,11 @@ import {
   MenuContainer,
 } from "./style";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
-import { toTop } from "./../../resources/toTop";
+import { toTop } from "./../../utils/toTop";
 import SelectLang from "../SelectLang";
 import burger from "../../assets/icons/hamburger.png";
 import close from "../../assets/icons/close.png";
-import { data_navbar } from "./../../resources/data";
+import { data_navbar } from "./../../utils/data";
 import { LangContext } from "../../context/lang";
 
 function Navbar() {

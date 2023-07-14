@@ -27,6 +27,7 @@ export const globalButton = css`
 
   &:hover {
     transform: translateY(-2px);
+    color: #fff;
   }
   &:active {
     transform: translateY(0);

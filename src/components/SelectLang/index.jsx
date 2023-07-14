@@ -12,12 +12,12 @@ function Select() {
     {
       id: 0,
       img: uz,
-      name: "Uzbek",
-      shortName: "Uz",
+      name: "O'zbek",
+      shortName: "O'z",
       countryCode: "uz",
       selected: localStorage.getItem("lang")
         ? localStorage.getItem("lang") === "uz"
-        : false,
+        : true,
     },
     {
       id: 1,
@@ -27,7 +27,7 @@ function Select() {
       countryCode: "en",
       selected: localStorage.getItem("lang")
         ? localStorage.getItem("lang") === "en"
-        : true,
+        : false,
     },
     {
       id: 2,

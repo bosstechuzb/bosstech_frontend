@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { BottomPart, Container, Item, OuterContainer, TopPart } from "./style";
 import { Fade } from "react-reveal";
-import { LangContext } from "./../../context/lang/index";
-import { data_how_we_work } from "../../resources/data";
+import { LangContext } from "./../../context/lang";
+import { data_how_we_work } from "../../utils/data";
 
 function HowWeWork() {
   const [language] = useContext(LangContext);

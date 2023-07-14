@@ -12,8 +12,8 @@ import {
 import img from "../../assets/images/solution/right-side.svg";
 import check from "../../assets/icons/check.svg";
 import { Fade } from "react-reveal";
-import { LangContext } from "./../../context/lang/index";
-import { data_seo_solution } from "../../resources/data";
+import { LangContext } from "./../../context/lang";
+import { data_seo_solution } from "../../utils/data";
 
 function SeoSolution() {
   const [language] = useContext(LangContext);

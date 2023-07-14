@@ -15,8 +15,8 @@ import "slick-carousel/slick/slick-theme.css";
 // Import images
 import pseudo from "../../assets/images/ourTeam/pseudo.svg";
 import { Fade } from "react-reveal";
-import { LangContext } from "./../../context/lang/index";
-import { data_our_team } from "../../resources/data";
+import { LangContext } from "./../../context/lang";
+import { data_our_team } from "../../utils/data";
 
 function OurTeam() {
   const [language] = useContext(LangContext);

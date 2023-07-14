@@ -9,8 +9,8 @@ import {
   Title,
 } from "./style";
 import { Fade } from "react-reveal";
-import { LangContext } from "./../../context/lang/index";
-import { data_our_services } from "../../resources/data";
+import { LangContext } from "./../../context/lang";
+import { data_our_services } from "../../utils/data";
 
 function OurServices() {
   const [language] = useContext(LangContext);

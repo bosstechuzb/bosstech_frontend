@@ -1,6 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { data_header } from "../../resources/data";
+import { data_header } from "../../utils/data";
 
 function Russian() {
   return (

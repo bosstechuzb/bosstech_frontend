@@ -11,8 +11,8 @@ import {
   Title,
 } from "./style";
 import { Fade } from "react-reveal";
-import { LangContext } from "./../../context/lang/index";
-import { data_why_choose_us } from "../../resources/data";
+import { LangContext } from "./../../context/lang";
+import { data_why_choose_us } from "../../utils/data";
 
 function WhyChooseUs() {
   const [language] = useContext(LangContext);

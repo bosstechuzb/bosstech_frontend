@@ -15,8 +15,8 @@ import {
 import { ReactComponent as Linkedin } from "../../assets/icons/portfolio/linkedin.svg";
 import { ReactComponent as Arrow } from "../../assets/icons/portfolio/arrow-top-right.svg";
 import { Fade } from "react-reveal";
-import { data_our_portfolio } from "../../resources/data";
-import { LangContext } from "./../../context/lang/index";
+import { LangContext } from "./../../context/lang";
+import { data_our_portfolio } from "../../utils/data";
 
 function Portfolio() {
   const [language] = useContext(LangContext);
@@ -34,7 +34,10 @@ function Portfolio() {
             </Fade>
           </LeftSide>
           <Fade bottom>
-            <Visit href="https://www.linkedin.com/company/bosstech-uz/" target="_blank">
+            <Visit
+              href="https://www.linkedin.com/company/bosstech-uz/"
+              target="_blank"
+            >
               <Linkedin /> {data_our_portfolio[language]?.button}
             </Visit>
           </Fade>
@@ -50,10 +53,7 @@ function Portfolio() {
                     {item.description}
                   </CardFooter.Description>
                   <div>
-                    <CardFooter.Link
-                      href={item.link}
-                      target="_blank"
-                    >
+                    <CardFooter.Link href={item.link} target="_blank">
                       {data_our_portfolio[language]?.button} <Arrow />
                     </CardFooter.Link>
                   </div>

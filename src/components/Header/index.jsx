@@ -15,8 +15,8 @@ import backgroundImg from "../../assets/images/header/background.svg";
 import rightSideImg from "../../assets/images/header/right-side.svg";
 import { ReactComponent as LogoImg } from "../../assets/images/header/logo.svg";
 import { Fade } from "react-reveal";
-import { LangContext } from "./../../context/lang/index";
-import { data_header } from "../../resources/data";
+import { LangContext } from "./../../context/lang";
+import { data_header } from "../../utils/data";
 import English from "./animation.english";
 import Russian from "./animation.russian";
 import Uzbek from "./animation.uzbek";
@@ -53,7 +53,9 @@ function Header() {
           </Fade>
           <ButtonRow>
             <Fade bottom>
-              <Button href="#contact">{data_header[language]?.button}</Button>
+              <Button onClick={() => {}} href="#contact">
+                {data_header[language]?.button}
+              </Button>
             </Fade>
           </ButtonRow>
         </LeftSide>
