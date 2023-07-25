@@ -141,27 +141,32 @@ export const data_our_services = {
       {
         icon: it,
         title: "IT consulting",
-        description: "Driving growth and efficiency with comprehensive IT consulting services.",
+        description:
+          "Driving growth and efficiency with comprehensive IT consulting services.",
       },
       {
         icon: mobile,
         title: "Mobile Development",
-        description: "Crafting innovative mobile apps that captivate audiences.",
+        description:
+          "Crafting innovative mobile apps that captivate audiences.",
       },
       {
         icon: web,
         title: "Web Development",
-        description: "Empowering your online presence with dynamic web development services.",
+        description:
+          "Empowering your online presence with dynamic web development services.",
       },
       {
         icon: social,
         title: "Social Media Marketing",
-        description: "Unlocking the potential of social media through strategic marketing.",
+        description:
+          "Unlocking the potential of social media through strategic marketing.",
       },
       {
         icon: design,
         title: "UX|UI Design",
-        description: "Designing visually stunning interfaces for enhanced user engagement.",
+        description:
+          "Designing visually stunning interfaces for enhanced user engagement.",
       },
     ],
   },
@@ -172,58 +177,68 @@ export const data_our_services = {
       {
         icon: it,
         title: "IT konsalting",
-        description: "Keng qamrovli IT konsalting xizmatlari bilan o'sish va samaradorlikni oshirish.",
+        description:
+          "Keng qamrovli IT konsalting xizmatlari bilan o'sish va samaradorlikni oshirish.",
       },
       {
         icon: mobile,
         title: "Mobil ilovalar",
-        description: "Foydalanuvchilarni o'ziga jalb qiladigan innovatsion mobil ilovalarni yaratish.",
+        description:
+          "Foydalanuvchilarni o'ziga jalb qiladigan innovatsion mobil ilovalarni yaratish.",
       },
       {
         icon: web,
         title: "Web saytlar",
-        description: "Dinamik vebsaytlarni ishlab chiqish xizmatlari bilan onlayn mavjudligingizni kuchaytirish.",
+        description:
+          "Dinamik vebsaytlarni ishlab chiqish xizmatlari bilan onlayn mavjudligingizni kuchaytirish.",
       },
       {
         icon: social,
         title: "Ijtimoiy tarmoq marketingi",
-        description: "Strategik marketing orqali ijtimoiy media imkoniyatlarini ochish.",
+        description:
+          "Strategik marketing orqali ijtimoiy media imkoniyatlarini ochish.",
       },
       {
         icon: design,
         title: "UX|UI Dizayn",
-        description: "Kengaytirilgan foydalanuvchi ishtiroki uchun vizual ajoyib interfeyslarni loyihalash.",
+        description:
+          "Kengaytirilgan foydalanuvchi ishtiroki uchun vizual ajoyib interfeyslarni loyihalash.",
       },
     ],
   },
   ru: {
     title: "Наши услуги",
-    description:"",
+    description: "",
     items: [
       {
         icon: it,
         title: "ИТ Консалтинг",
-        description: "Обеспечение роста и эффективности с помощью комплексных консультационных услуг в области ИТ.",
+        description:
+          "Обеспечение роста и эффективности с помощью комплексных консультационных услуг в области ИТ.",
       },
       {
         icon: mobile,
         title: "Мобильная Разработка",
-        description: "Создание инновационных мобильных приложений, которые привлекают аудиторию.",
+        description:
+          "Создание инновационных мобильных приложений, которые привлекают аудиторию.",
       },
       {
         icon: web,
         title: "Веб Разработка",
-        description: "Расширение возможностей вашего присутствия в Интернете с помощью динамических услуг веб-разработки.",
+        description:
+          "Расширение возможностей вашего присутствия в Интернете с помощью динамических услуг веб-разработки.",
       },
       {
         icon: social,
         title: "Маркетинг в области СМИ",
-        description: "Раскрытие потенциала социальных сетей с помощью стратегического маркетинга.",
+        description:
+          "Раскрытие потенциала социальных сетей с помощью стратегического маркетинга.",
       },
       {
         icon: design,
         title: "UX/UI Дизайн",
-        description: "Разработка визуально ошеломляющих интерфейсов для повышения вовлеченности пользователей.",
+        description:
+          "Разработка визуально ошеломляющих интерфейсов для повышения вовлеченности пользователей.",
       },
     ],
   },
@@ -268,7 +283,8 @@ export const data_seo_solution = {
 export const data_why_choose_us = {
   en: {
     title: "Why Choose Us",
-    description: "Experience exceptional IT solutions and unrivaled expertise for your digital transformation.",
+    description:
+      "Experience exceptional IT solutions and unrivaled expertise for your digital transformation.",
     items: [
       {
         icon: satisfied,
@@ -294,7 +310,8 @@ export const data_why_choose_us = {
   },
   uz: {
     title: "Nima Uchun Bizni Tanlaysiz",
-    description: "Raqamli transformatsiyangiz uchun ajoyib IT yechimlari va tengsiz tajribadan foydalaning.",
+    description:
+      "Raqamli transformatsiyangiz uchun ajoyib IT yechimlari va tengsiz tajribadan foydalaning.",
     items: [
       {
         icon: satisfied,
@@ -320,7 +337,8 @@ export const data_why_choose_us = {
   },
   ru: {
     title: "Почему Выбрали Нас",
-    description: "Воспользуйтесь исключительными ИТ-решениями и непревзойденным опытом для цифровой трансформации.",
+    description:
+      "Воспользуйтесь исключительными ИТ-решениями и непревзойденным опытом для цифровой трансформации.",
     items: [
       {
         icon: satisfied,
@@ -457,7 +475,7 @@ export const data_our_team = {
         name: "Said Azimkhon",
         position: "UX|UI Designer",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-      }
+      },
     ],
   },
   uz: {
@@ -482,7 +500,7 @@ export const data_our_team = {
         name: "Said Azimxon",
         position: "UX|UI Dizayner",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-      }
+      },
     ],
   },
   ru: {
@@ -507,7 +525,7 @@ export const data_our_team = {
         name: "Саид Азимхан",
         position: "UX|UI Дизайнер",
         text: "Лорем ипсум долор сит амет, cонсеcтетур адиписcинг элит, сед до эиусмод темпор инcидидунт ут лаборе эт долоре",
-      }
+      },
     ],
   },
 };
@@ -617,6 +635,8 @@ export const data_contact = {
     email: "bosstechuzb@gmail.com",
     phone: "+998 91 798 36 06",
     address: "1A Yangizamon Street, Mirabod, Tashkent",
+    messageSent: "Successfully sent!",
+    messageSendingError: "Something went wrong, please try again later!",
   },
   uz: {
     input_name: "Ism",
@@ -626,15 +646,20 @@ export const data_contact = {
     email: "bosstechuzb@gmail.com",
     phone: "+998 91 798 36 06",
     address: "Toshkent shahar, Mirabod tumani, Yangizamon ko'chasi 1A",
+    messageSent: "Muvaffaqiyatli yuborildi!",
+    messageSendingError:
+      "Nimadir xato ketdi, iltimos keyinroq qayta urinib ko'ring!",
   },
   ru: {
     input_name: "Имя",
-    input_phone_email: "Email или номер телефона",
+    input_phone_email: "Электронная почта  или номер телефона",
     input_message: "Сообщение",
     button: "Отправить",
     email: "bosstechuzb@gmail.com",
     phone: "+998 91 798 36 06",
     address: "г. Ташкент, Мирабадский район, улица Янгизамон 1А",
+    messageSent: "Успешно отправлено!",
+    messageSendingError: "Что-то пошло не так, пожалуйста, попробуйте позже!",
   },
 };
 
@@ -643,9 +668,7 @@ export const data_footer = {
     link_columns: [
       {
         title: "Useful Link",
-        links: [
-          { to: "/home", name: "About Us" },
-        ],
+        links: [{ to: "/home", name: "About Us" }],
       },
       {
         title: "The Projects",
@@ -653,7 +676,7 @@ export const data_footer = {
           { to: "https://buzzzem.net", name: "Buzzzem" },
           { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
-      }
+      },
     ],
     form: {
       text: "Newsletter",
@@ -666,9 +689,7 @@ export const data_footer = {
     link_columns: [
       {
         title: "Foydali havola",
-        links: [
-          { to: "/", name: "Biz haqimizda" },
-        ],
+        links: [{ to: "/", name: "Biz haqimizda" }],
       },
       {
         title: "Loyihalar",
@@ -676,7 +697,7 @@ export const data_footer = {
           { to: "https://buzzzem.net", name: "Buzzzem" },
           { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
-      }
+      },
     ],
     form: {
       text: "Yangiliklar",
@@ -689,9 +710,7 @@ export const data_footer = {
     link_columns: [
       {
         title: "Полезная ссылка",
-        links: [
-          { to: "", name: "О нас" },
-        ],
+        links: [{ to: "", name: "О нас" }],
       },
       {
         title: "Проэкты",
@@ -699,7 +718,7 @@ export const data_footer = {
           { to: "https://buzzzem.net", name: "Buzzzem" },
           { to: "https://bossblog.uz", name: "BOSSBLOG" },
         ],
-      }
+      },
     ],
     form: {
       text: "Новостная рассылка",

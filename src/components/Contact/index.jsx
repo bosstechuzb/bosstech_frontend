@@ -37,11 +37,11 @@ function Contact() {
       })
       .then((res) => {
         reset();
-        alert("Successfully sent!");
+        alert(data_contact[language]?.messageSent);
       })
       .catch((err) => {
         console.log(err);
-        alert("Something went wrong, please try again later!");
+        alert(data_contact[language]?.messageSendingError);
       });
   };
 
