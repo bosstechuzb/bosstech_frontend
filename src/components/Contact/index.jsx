@@ -27,10 +27,10 @@ function Contact() {
       emailOrPhone,
       message,
     };
-    console.log("Form data: ", obj);
+    // console.log("Form data: ", obj);
     reset();
     axios
-      .post(`https://api.chatuziouz.ml/api/v1/message`, obj, {
+      .post(`https://tech.bossblog.uz/api/v1/message`, obj, {
         headers: {
           "Content-Type": "application/json",
         },
